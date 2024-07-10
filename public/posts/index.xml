@@ -1,0 +1,97 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Portkey</title>
+        <link>portkey.xyz/posts/</link>
+        <description>Recent content in Posts on Portkey</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Wed, 10 Jul 2024 11:50:59 -0400</lastBuildDate>
+        <atom:link href="portkey.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>What Is a VLAN</title>
+            <link>portkey.xyz/posts/what-is-a-vlan/</link>
+            <pubDate>Wed, 10 Jul 2024 11:50:59 -0400</pubDate>
+            
+            <guid>portkey.xyz/posts/what-is-a-vlan/</guid>
+            <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.
+Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
+            <content type="html"><![CDATA[
+    <img src="/img/VLAN.png"  alt="Image created by ChatGPT"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>VLAN stands for <strong>Virtual Local Area Network</strong>. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.</p>
+<h3 id="why-use-vlans">Why Use VLANs?</h3>
+<ul>
+<li>
+<p><strong>Organization</strong>: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other. With VLANs, you can separate departments (like HR, Sales, and IT) so each has its own space to communicate without interference.</p>
+</li>
+<li>
+<p><strong>Security</strong>: VLANs add an extra layer of security by isolating sensitive data. For example, you can keep your HR department’s traffic separate from the rest of the network, reducing the risk of sensitive information leaking out.</p>
+</li>
+<li>
+<p><strong>Efficiency</strong>: By controlling and managing network traffic more effectively, VLANs can reduce congestion and improve overall performance. It’s like having dedicated lanes on a highway for different types of vehicles.</p>
+</li>
+</ul>
+<h3 id="how-do-vlans-work">How Do VLANs Work?</h3>
+<p>In simple terms, VLANs tag network traffic with an identifier (VLAN ID) that tells your network devices how to handle it. Devices that belong to the same VLAN can communicate with each other as if they were on the same physical network, even if they’re not.</p>
+<h3 id="real-life-example">Real-Life Example</h3>
+<p>Let’s say you’re setting up a network for a small company. You could create one VLAN for the office staff, another for the guest Wi-Fi, and a third for the IP phones. This way, the guest Wi-Fi traffic doesn’t interfere with your office’s internal communications, and the IP phones have a dedicated path, ensuring call quality remains high.</p>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>VLANs might sound a bit techy at first, but they’re a fundamental tool for creating a more organized, secure, and efficient network. Whether you&rsquo;re setting up a small home network or a large enterprise system, VLANs can make a big difference.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Networking for AI</title>
+            <link>portkey.xyz/posts/networking-for-ai/</link>
+            <pubDate>Sat, 02 Mar 2024 13:12:33 -0400</pubDate>
+            
+            <guid>portkey.xyz/posts/networking-for-ai/</guid>
+            <description>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.</description>
+            <content type="html"><![CDATA[
+    <img src="/img/RDMA.png"  alt="Image created by ChatGPT"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications. However, recently, I’ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.</p>
+<h4 id="rdma">RDMA</h4>
+<p>Let me introduce you to <strong>RDMA</strong>, which stands for Remote Direct Memory Access. RDMA bypasses the CPU and other traditional data access methods, pulling information directly from memory and transmitting it to the server array for model training. This technology is crucial as AI models are highly sensitive to packet loss, hence requiring a lossless approach. InfiniBand is another approach to this problem. While it’s intriguing, it relies on proprietary hardware not commonly found in most companies’ existing infrastructure. Consequently, setting up an AI deployment becomes significantly more expensive due to the need to acquire specific network hardware.</p>
+<h4 id="roce">RoCE</h4>
+<p>Fortunately, there’s a solution: <strong>RoCE (RDMA over Converged Ethernet)</strong>. Essentially, RoCE offers the benefits of RDMA, such as bypassing the CPU and reducing latency, but can be implemented using existing Ethernet infrastructure. While this is an appealing option, there isn’t a standardized industry framework for it as far as I know. It remains to be seen which technology will prevail and steer the direction of the industry.</p>
+<h4 id="comparing-technologies-and-connectivity-requirements">Comparing Technologies and Connectivity Requirements</h4>
+<ul>
+<li>
+<p><strong>InfiniBand (IB)</strong>:</p>
+<ul>
+<li><strong>Connectivity Requirement</strong>: Layer 2</li>
+<li><strong>Description</strong>: InfiniBand is a high-performance, low-latency networking technology primarily used in high-performance computing (HPC) environments.</li>
+</ul>
+</li>
+<li>
+<p><strong>RoCE Versions</strong>:</p>
+<ul>
+<li>
+<p><strong>RoCE v1</strong>:</p>
+<ul>
+<li><strong>Connectivity Requirement</strong>: Layer 2</li>
+<li><strong>Description</strong>: RoCE v1 relies on Ethernet frames and requires the network devices to be within the same Ethernet broadcast domain (i.e., the same VLAN/subnet).</li>
+</ul>
+</li>
+<li>
+<p><strong>RoCE v2</strong>:</p>
+<ul>
+<li><strong>Connectivity Requirement</strong>: Layer 3</li>
+<li><strong>Description</strong>: RoCE v2 encapsulates the RDMA traffic within UDP/IP packets, allowing it to traverse IP networks. This version supports layer 3 connectivity, meaning it can operate across different subnets and routed networks.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>I’m particularly interested in the infrastructure aspect of AI, which aligns closely with my career experiences. I’ll be closely monitoring developments in this area in the future. I’m looking forward to the day when I can set up a miniature version of these setups in my homelab and conduct real-world tests comparing the benefits of RoCE versus the classic Spine and Leaf design without AI-specific protocols. Given the rapid pace of industry evolution, that day might arrive sooner than expected.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

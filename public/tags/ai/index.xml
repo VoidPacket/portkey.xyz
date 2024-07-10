@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Portkey</title>
+    <link>portkey.xyz/tags/ai/</link>
+    <description>Recent content in AI on Portkey</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 02 Mar 2024 13:12:33 -0400</lastBuildDate>
+    <atom:link href="portkey.xyz/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking for AI</title>
+      <link>portkey.xyz/posts/networking-for-ai/</link>
+      <pubDate>Sat, 02 Mar 2024 13:12:33 -0400</pubDate>
+      <guid>portkey.xyz/posts/networking-for-ai/</guid>
+      <description>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.</description>
+    </item>
+  </channel>
+</rss>

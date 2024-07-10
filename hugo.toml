@@ -1,0 +1,108 @@
+baseurl      = "portkey.xyz"
+title        = "My Blog"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Welcome to Portkey, your gateway to the world of Network Engineering! Here, I delve into the latest trends and topics in Networking, Network Security, and automation, offering insights and practical advice to enhance your knowledge and skills."
+
+  # Other existing parameters
+  cover_debug = true  # Example debug parameter, remove if not needed
+  cover_image = "/images/cover.png"
+
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating system. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document's head
+  description = "portkey"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+# Addon: Social icons
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+  [[params.social]]
+  name = "github"
+  url = "https://github.com/VoidPacket/"
+
+  #[[params.social]]
+  #  name = "email"
+  #  url = "mailto: bryanjaywassel@gmail.com"
+
+  [[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/bryan-wassel-47706895/"
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Startpage portrait 
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # Uncomment this if you want a portrait on your start page
+  #
+  #[params.portrait]
+  #  path     = "/img/portrait.jpg"
+  #  alt      = "Portrait"
+  #  maxWidth = "250px"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Portkey"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  [languages.en.params]
+    subtitle  = "A simple theme for Hugo"
+
+    [languages.en.params.logo]
+      logoMark     = " "
+      logoText = "Portkey(Config)#"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "About"
+    name       = "About"
+    url        = "/about"
+    weight     = 3
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+    weight     = 2
+  [[menu.main]]
+    identifier = "Home"
+    name       = "Home"
+    url        = "/"
+    weight     = 1

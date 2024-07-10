@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas. However, recently, I&amp;rsquo;ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups." />
+<meta name="keywords" content=", networking, AI" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="//localhost:1313/posts/2024/07/networking-for-ai/" />
+
+
+    <title>
+        
+            Networking for AI :: Portkey  — A simple theme for Hugo
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Networking for AI">
+  <meta itemprop="description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas. However, recently, I’ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.">
+  <meta itemprop="datePublished" content="2024-07-02T13:12:33-04:00">
+  <meta itemprop="dateModified" content="2024-07-02T13:12:33-04:00">
+  <meta itemprop="wordCount" content="334">
+  <meta itemprop="keywords" content="Networking,AI">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Networking for AI">
+  <meta name="twitter:description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas. However, recently, I’ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.">
+
+
+
+    <meta property="og:url" content="//localhost:1313/posts/2024/07/networking-for-ai/">
+  <meta property="og:site_name" content="Portkey">
+  <meta property="og:title" content="Networking for AI">
+  <meta property="og:description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas. However, recently, I’ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-02T13:12:33-04:00">
+    <meta property="article:modified_time" content="2024-07-02T13:12:33-04:00">
+    <meta property="article:tag" content="Networking">
+    <meta property="article:tag" content="AI">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-02 13:12:33 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                Portkey(Config)#</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/">Home</a></li><li><a href="/posts">Blog</a></li><li><a href="/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="//localhost:1313/posts/2024/07/networking-for-ai/">Networking for AI</a>
+      </h1>
+
+      
+
+      
+        <figure class="post-cover">
+          <img src="//localhost:1313/images/cover.png" alt="Networking for AI" />
+          
+          
+            <figcaption class="center">image created with chatGPT</figcaption>
+          
+        </figure>
+      
+
+      
+
+      <div class="post-content">
+        <p>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas. However, recently, I&rsquo;ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.</p>
+<h3 id="rdma">RDMA</h3>
+<p>Let me introduce you to RDMA, which stands for <em>Remote Direct Memory Access</em>. RDMA bypasses the CPU and other traditional data access methods, pulling information directly from memory and transmitting it to the server array for model training. This technology is crucial as AI models are highly sensitive to packet loss, hence requiring a lossless approach. InfiniBand is another term for this solution. While it&rsquo;s intriguing, it relies on proprietary hardware not commonly found in most companies&rsquo; existing infrastructure. Consequently, setting up an AI deployment becomes significantly more expensive due to the need to acquire specific network hardware.</p>
+<h3 id="roce">RoCE</h3>
+<p>Fortunately, there&rsquo;s a solution: RoCE <em>RDMA over Converged Ethernet</em>. Essentially, RoCE offers the benefits of RDMA, such as bypassing the CPU and reducing latency, but can be implemented using existing Ethernet infrastructure. While this is an appealing option, there isn&rsquo;t a standardized industry framework for it as far as I know. It remains to be seen which technology will prevail and steer the direction of the industry.</p>
+<p>I&rsquo;m particularly interested in the infrastructure aspect of AI, which aligns closely with my career experiences. I&rsquo;ll be closely monitoring developments in this area in the future. I&rsquo;m looking forward to the day when I can set up a miniature version of these setups in my homelab and conduct real-world tests comparing the benefits of RoCE versus the classic Spine and Leaf design without AI-specific protocols. Given the rapid pace of industry evolution, that day might arrive sooner than expected.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="//localhost:1313/tags/networking/">networking</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/ai/">AI</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        334 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-07-02 13:12
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.85fad2de4f13fec3bcb3b3cb10430cdb44a7b4a9749b32938241a5c6e77718df7624f1002b880521fdc26e24ec1077fda214bf1cb36ee3045510760d09638cae.js" integrity="sha512-hfrS3k8T/sO8s7PLEEMM20SntKl0mzKTgkGlxud3GN92JPEAK4gFIf3CbiTsEHf9ohS/HLNu4wRVEHYNCWOMrg=="></script>
+
+
+
+
+    </body>
+</html>
