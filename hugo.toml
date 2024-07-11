@@ -36,7 +36,7 @@ paginate     = 10
   enableGlobalLanguageMenu = false
 
   # Metadata mostly used in document's head
-  description = "portkey"
+  description = ""
   keywords = "homepage, blog"
   images = [""]
 
