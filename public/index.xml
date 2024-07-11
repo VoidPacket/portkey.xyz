@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portkey</title>
-    <link>portkey.xyz/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Portkey</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 10 Jul 2024 11:50:59 -0400</lastBuildDate>
-    <atom:link href="portkey.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Is a VLAN</title>
-      <link>portkey.xyz/posts/what-is-a-vlan/</link>
+      <link>//localhost:1313/posts/what-is-a-vlan/</link>
       <pubDate>Wed, 10 Jul 2024 11:50:59 -0400</pubDate>
-      <guid>portkey.xyz/posts/what-is-a-vlan/</guid>
+      <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
       <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&#xA;Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>portkey.xyz/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Tue, 02 Jul 2024 13:12:33 -0400</pubDate>
-      <guid>portkey.xyz/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>Hello! I’m Bryan Wassel, a passionate network engineer with a knack for making complex systems simple and reliable. With over 6 years of experience in networking and network security, I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.&#xA;At Portkey, my goal is to share insights, tips, and trends in the world of network engineering. I believe that learning is a continuous journey, and through this blog, I aim to create a community where we can all grow together.</description>
     </item>
     <item>
       <title>Networking for AI</title>
-      <link>portkey.xyz/posts/networking-for-ai/</link>
+      <link>//localhost:1313/posts/networking-for-ai/</link>
       <pubDate>Sat, 02 Mar 2024 13:12:33 -0400</pubDate>
-      <guid>portkey.xyz/posts/networking-for-ai/</guid>
+      <guid>//localhost:1313/posts/networking-for-ai/</guid>
       <description>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.</description>
     </item>
   </channel>

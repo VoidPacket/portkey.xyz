@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>portkey.xyz/tags/networking/</loc>
+    <loc>//localhost:1313/tags/networking/</loc>
     <lastmod>2024-07-10T11:50:59-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-07-10T11:50:59-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2024-07-10T11:50:59-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/tags/security/</loc>
+    <loc>//localhost:1313/tags/security/</loc>
     <lastmod>2024-07-10T11:50:59-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-07-10T11:50:59-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/posts/what-is-a-vlan/</loc>
+    <loc>//localhost:1313/posts/what-is-a-vlan/</loc>
     <lastmod>2024-07-10T11:50:59-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2024-07-02T13:12:33-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/tags/aboutme/</loc>
+    <loc>//localhost:1313/tags/aboutme/</loc>
     <lastmod>2024-07-02T13:12:33-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/tags/ai/</loc>
+    <loc>//localhost:1313/tags/ai/</loc>
     <lastmod>2024-03-02T13:12:33-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/posts/networking-for-ai/</loc>
+    <loc>//localhost:1313/posts/networking-for-ai/</loc>
     <lastmod>2024-03-02T13:12:33-04:00</lastmod>
   </url><url>
-    <loc>portkey.xyz/blog/</loc>
+    <loc>//localhost:1313/blog/</loc>
   </url><url>
-    <loc>portkey.xyz/series/</loc>
+    <loc>//localhost:1313/series/</loc>
   </url>
 </urlset>

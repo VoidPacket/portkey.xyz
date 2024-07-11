@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Portkey</title>
-    <link>portkey.xyz/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Portkey</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 10 Jul 2024 11:50:59 -0400</lastBuildDate>
-    <atom:link href="portkey.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Networking</title>
-      <link>portkey.xyz/tags/networking/</link>
+      <link>//localhost:1313/tags/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>portkey.xyz/tags/networking/</guid>
+      <guid>//localhost:1313/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>portkey.xyz/tags/security/</link>
+      <link>//localhost:1313/tags/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>portkey.xyz/tags/security/</guid>
+      <guid>//localhost:1313/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Aboutme</title>
-      <link>portkey.xyz/tags/aboutme/</link>
+      <link>//localhost:1313/tags/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>portkey.xyz/tags/aboutme/</guid>
+      <guid>//localhost:1313/tags/aboutme/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>portkey.xyz/tags/ai/</link>
+      <link>//localhost:1313/tags/ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>portkey.xyz/tags/ai/</guid>
+      <guid>//localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
   </channel>
