@@ -1,6 +1,7 @@
 ---
 title: "Running Ollama AI in Your Homelab"
 date: 2024-07-11T22:26:05-04:00
+draft: true
 toc: false
 images:
 tags:
@@ -40,9 +41,7 @@ ollama run llama3
 We are going to be utilizing a web interface to access our local AI instance, there is a great open source tool called /b Open-webui. /b 
 
 ```shell
-docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v 
-open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/
-open-webui:main
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
 

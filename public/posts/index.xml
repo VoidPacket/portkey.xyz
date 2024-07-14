@@ -10,37 +10,6 @@
         <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Running Ollama AI in Your Homelab</title>
-            <link>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</link>
-            <pubDate>Thu, 11 Jul 2024 22:26:05 -0400</pubDate>
-            
-            <guid>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</guid>
-            <description>Ollama https://ollama.com/
-Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.
-Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.</description>
-            <content type="html"><![CDATA[
-    <img src="/img/ollama.png"  alt="Ollama logo"  class="center"  style="border-radius: 8px;"  />
-
-
-<h1 id="ollama">Ollama</h1>
-<p><a href="https://ollama.com/">https://ollama.com/</a></p>
-<p>Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.</p>
-<h3 id="ollama-installation">Ollama installation</h3>
-<p>Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on <a href="https://ollama.com/">https://ollama.com/</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -fsSL https://ollama.com/install.sh | sh
-</span></span></code></pre></div><p>Once Ollama is installed we need to pull a model to use. I am going to use llama3 for this example but you can find many more listed here <a href="https://ollama.com/library">https://ollama.com/library</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ollama pull llama3
-</span></span></code></pre></div><p>Once the model finishes pulling you can run the model with the following command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ollama run llama3
-</span></span></code></pre></div><h3 id="open-webui-installation">Open-webui installation</h3>
-<p>We are going to be utilizing a web interface to access our local AI instance, there is a great open source tool called /b Open-webui. /b</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d -p 3000:8080 --add-host<span style="color:#f92672">=</span>host.docker.internal:host-gateway -v 
-</span></span><span style="display:flex;"><span>open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/
-</span></span><span style="display:flex;"><span>open-webui:main
-</span></span></code></pre></div>]]></content>
-        </item>
-        
-        <item>
             <title>What Is a VLAN</title>
             <link>//localhost:1313/posts/what-is-a-vlan/</link>
             <pubDate>Wed, 10 Jul 2024 11:50:59 -0400</pubDate>
