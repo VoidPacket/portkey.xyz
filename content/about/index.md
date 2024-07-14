@@ -6,13 +6,13 @@ toc: false
 tags:
   - aboutme
 ---
+{{< image src="/img/_portrait.png" alt="Bryan Wassel 2024" position="center" 
+style="border-radius: 80px;" >}}
 
-Hello! I’m Bryan Wassel, a passionate network engineer with a knack for making complex systems simple and reliable. With over 6 years of experience in networking and network security, I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.
+Hello! I’m Bryan Wassel, a passionate network engineer with over 15 years of experience in the IT industry, including more than 6 years specializing in Network Engineering. I have a knack for making complex systems simple and reliable, and I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.
 
-At Portkey, my goal is to share insights, tips, and trends in the world of network engineering. I believe that learning is a continuous journey, and through this blog, I aim to create a community where we can all grow together. Whether you’re a seasoned professional or just starting out, there’s something here for everyone.
+At Portkey, my goal is to create a space where people can learn and explore different topics in network engineering. I believe that learning is a continuous journey, and through this blog, I aim to share insights, tips, and trends in the world of networking.
 
-When I’m not tinkering with networks, you might find me exploring new technologies, enjoying a good book, or spending quality time with family and friends.
+Outside of networking, I hold a partial ownership in a local brewery, offering my expertise in an advisory capacity. When I’m not engaged with network systems or the brewery, you’ll likely find me diving into new tech, reading a good book, or enjoying quality moments with family and friends.
 
 Thanks for stopping by, and I hope you find the content here helpful and engaging!
-
-

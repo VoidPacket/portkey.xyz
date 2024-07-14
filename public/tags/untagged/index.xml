@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 02 Jul 2024 13:12:33 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2024 22:26:05 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Networking for AI</title>
-      <link>//localhost:1313/posts/networking-for-ai/</link>
-      <pubDate>Tue, 02 Jul 2024 13:12:33 -0400</pubDate>
-      <guid>//localhost:1313/posts/networking-for-ai/</guid>
-      <description>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas. However, recently, I&amp;rsquo;ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.</description>
+      <title>Running Ollama AI in Your Homelab</title>
+      <link>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</link>
+      <pubDate>Thu, 11 Jul 2024 22:26:05 -0400</pubDate>
+      <guid>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</guid>
+      <description>Ollama Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.</description>
     </item>
   </channel>
 </rss>

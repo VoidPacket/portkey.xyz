@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 10 Jul 2024 11:50:59 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2024 22:26:05 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running Ollama AI in Your Homelab</title>
+      <link>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</link>
+      <pubDate>Thu, 11 Jul 2024 22:26:05 -0400</pubDate>
+      <guid>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</guid>
+      <description>Ollama https://ollama.com/&#xA;Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.&#xA;Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.</description>
+    </item>
     <item>
       <title>What Is a VLAN</title>
       <link>//localhost:1313/posts/what-is-a-vlan/</link>
@@ -21,7 +28,7 @@
       <link>//localhost:1313/about/</link>
       <pubDate>Tue, 02 Jul 2024 13:12:33 -0400</pubDate>
       <guid>//localhost:1313/about/</guid>
-      <description>Hello! I’m Bryan Wassel, a passionate network engineer with a knack for making complex systems simple and reliable. With over 6 years of experience in networking and network security, I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.&#xA;At Portkey, my goal is to share insights, tips, and trends in the world of network engineering. I believe that learning is a continuous journey, and through this blog, I aim to create a community where we can all grow together.</description>
+      <description>Hello! I’m Bryan Wassel, a passionate network engineer with over 15 years of experience in the IT industry, including more than 6 years specializing in Network Engineering. I have a knack for making complex systems simple and reliable, and I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.&#xA;At Portkey, my goal is to create a space where people can learn and explore different topics in network engineering.</description>
     </item>
     <item>
       <title>Networking for AI</title>

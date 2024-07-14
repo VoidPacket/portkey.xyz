@@ -6,16 +6,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications." />
-<meta name="keywords" content="homepage, blog, networking, AI" />
+<meta name="description" content="Ollama https://ollama.com/
+Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.
+Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama." />
+<meta name="keywords" content="homepage, blog, AI" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="//localhost:1313/posts/networking-for-ai/" />
+<link rel="canonical" href="//localhost:1313/posts/running-ollama-ai-in-your-homelab/" />
 
 
     <title>
         
-            Networking for AI :: Portkey  — A simple theme for Hugo
+            Running Ollama AI in Your Homelab :: Portkey  — A simple theme for Hugo
         
     </title>
 
@@ -37,31 +39,36 @@
 
 
 
-  <meta itemprop="name" content="Networking for AI">
-  <meta itemprop="description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.">
-  <meta itemprop="datePublished" content="2024-03-02T13:12:33-04:00">
-  <meta itemprop="dateModified" content="2024-03-02T13:12:33-04:00">
-  <meta itemprop="wordCount" content="441">
+  <meta itemprop="name" content="Running Ollama AI in Your Homelab">
+  <meta itemprop="description" content="Ollama https://ollama.com/
+Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.
+Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.">
+  <meta itemprop="datePublished" content="2024-07-11T22:26:05-04:00">
+  <meta itemprop="dateModified" content="2024-07-11T22:26:05-04:00">
+  <meta itemprop="wordCount" content="189">
   <meta itemprop="image" content="//localhost:1313/">
-  <meta itemprop="keywords" content="Networking,AI">
+  <meta itemprop="keywords" content="AI">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="//localhost:1313/">
-  <meta name="twitter:title" content="Networking for AI">
-  <meta name="twitter:description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.">
+  <meta name="twitter:title" content="Running Ollama AI in Your Homelab">
+  <meta name="twitter:description" content="Ollama https://ollama.com/
+Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.
+Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.">
 
 
 
-    <meta property="og:url" content="//localhost:1313/posts/networking-for-ai/">
+    <meta property="og:url" content="//localhost:1313/posts/running-ollama-ai-in-your-homelab/">
   <meta property="og:site_name" content="Portkey">
-  <meta property="og:title" content="Networking for AI">
-  <meta property="og:description" content="AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.">
+  <meta property="og:title" content="Running Ollama AI in Your Homelab">
+  <meta property="og:description" content="Ollama https://ollama.com/
+Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.
+Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-03-02T13:12:33-04:00">
-    <meta property="article:modified_time" content="2024-03-02T13:12:33-04:00">
-    <meta property="article:tag" content="Networking">
+    <meta property="article:published_time" content="2024-07-11T22:26:05-04:00">
+    <meta property="article:modified_time" content="2024-07-11T22:26:05-04:00">
     <meta property="article:tag" content="AI">
     <meta property="og:image" content="//localhost:1313/">
 
@@ -70,7 +77,7 @@
 
 
 
-    <meta property="article:published_time" content="2024-03-02 13:12:33 -0400 -0400" />
+    <meta property="article:published_time" content="2024-07-11 22:26:05 -0400 EDT" />
 
 
 
@@ -141,7 +148,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        3 minutes
+        One minute
 
         
       </p>
@@ -149,7 +156,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="//localhost:1313/posts/networking-for-ai/">Networking for AI</a>
+        <a href="//localhost:1313/posts/running-ollama-ai-in-your-homelab/">Running Ollama AI in Your Homelab</a>
       </h1>
 
       
@@ -160,46 +167,25 @@
 
       <div class="post-content">
         
-    <img src="/img/RDMA.png"  alt="Image created by ChatGPT"  class="center"  style="border-radius: 8px;"  />
+    <img src="/img/ollama.png"  alt="Ollama logo"  class="center"  style="border-radius: 8px;"  />
 
 
-<p>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications. However, recently, I’ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.</p>
-<h4 id="rdma">RDMA</h4>
-<p>Let me introduce you to <strong>RDMA</strong>, which stands for Remote Direct Memory Access. RDMA bypasses the CPU and other traditional data access methods, pulling information directly from memory and transmitting it to the server array for model training. This technology is crucial as AI models are highly sensitive to packet loss, hence requiring a lossless approach. InfiniBand is another approach to this problem. While it’s intriguing, it relies on proprietary hardware not commonly found in most companies’ existing infrastructure. Consequently, setting up an AI deployment becomes significantly more expensive due to the need to acquire specific network hardware.</p>
-<h4 id="roce">RoCE</h4>
-<p>Fortunately, there’s a solution: <strong>RoCE (RDMA over Converged Ethernet)</strong>. Essentially, RoCE offers the benefits of RDMA, such as bypassing the CPU and reducing latency, but can be implemented using existing Ethernet infrastructure. While this is an appealing option, there isn’t a standardized industry framework for it as far as I know. It remains to be seen which technology will prevail and steer the direction of the industry.</p>
-<h4 id="comparing-technologies-and-connectivity-requirements">Comparing Technologies and Connectivity Requirements</h4>
-<ul>
-<li>
-<p><strong>InfiniBand (IB)</strong>:</p>
-<ul>
-<li><strong>Connectivity Requirement</strong>: Layer 2</li>
-<li><strong>Description</strong>: InfiniBand is a high-performance, low-latency networking technology primarily used in high-performance computing (HPC) environments.</li>
-</ul>
-</li>
-<li>
-<p><strong>RoCE Versions</strong>:</p>
-<ul>
-<li>
-<p><strong>RoCE v1</strong>:</p>
-<ul>
-<li><strong>Connectivity Requirement</strong>: Layer 2</li>
-<li><strong>Description</strong>: RoCE v1 relies on Ethernet frames and requires the network devices to be within the same Ethernet broadcast domain (i.e., the same VLAN/subnet).</li>
-</ul>
-</li>
-<li>
-<p><strong>RoCE v2</strong>:</p>
-<ul>
-<li><strong>Connectivity Requirement</strong>: Layer 3</li>
-<li><strong>Description</strong>: RoCE v2 encapsulates the RDMA traffic within UDP/IP packets, allowing it to traverse IP networks. This version supports layer 3 connectivity, meaning it can operate across different subnets and routed networks.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="final-thoughts">Final Thoughts</h3>
-<p>I’m particularly interested in the infrastructure aspect of AI, which aligns closely with my career experiences. I’ll be closely monitoring developments in this area in the future. I’m looking forward to the day when I can set up a miniature version of these setups in my homelab and conduct real-world tests comparing the benefits of RoCE versus the classic Spine and Leaf design without AI-specific protocols. Given the rapid pace of industry evolution, that day might arrive sooner than expected.</p>
-
+<h1 id="ollama">Ollama</h1>
+<p><a href="https://ollama.com/">https://ollama.com/</a></p>
+<p>Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.</p>
+<h3 id="ollama-installation">Ollama installation</h3>
+<p>Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on <a href="https://ollama.com/">https://ollama.com/</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -fsSL https://ollama.com/install.sh | sh
+</span></span></code></pre></div><p>Once Ollama is installed we need to pull a model to use. I am going to use llama3 for this example but you can find many more listed here <a href="https://ollama.com/library">https://ollama.com/library</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ollama pull llama3
+</span></span></code></pre></div><p>Once the model finishes pulling you can run the model with the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ollama run llama3
+</span></span></code></pre></div><h3 id="open-webui-installation">Open-webui installation</h3>
+<p>We are going to be utilizing a web interface to access our local AI instance, there is a great open source tool called /b Open-webui. /b</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d -p 3000:8080 --add-host<span style="color:#f92672">=</span>host.docker.internal:host-gateway -v 
+</span></span><span style="display:flex;"><span>open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/
+</span></span><span style="display:flex;"><span>open-webui:main
+</span></span></code></pre></div>
       </div>
     </article>
 
@@ -210,7 +196,6 @@
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="//localhost:1313/tags/networking/">networking</a></span>
         <span class="tag"><a href="//localhost:1313/tags/ai/">AI</a></span>
         
     </p>
@@ -225,7 +210,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        441 Words
+        189 Words
       </p>
 
       <p>
@@ -236,7 +221,7 @@
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         
-          2024-03-02 12:12
+          2024-07-11 22:26
         
 
          
@@ -247,7 +232,7 @@
       <hr />
       <div class="sharing-buttons">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </div>
@@ -255,7 +240,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
   <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
       <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
@@ -267,7 +252,7 @@
  
 
 
-<a class="resp-sharing-button__link" href="mailto:?subject=Networking%20for%20AI&amp;body=%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+<a class="resp-sharing-button__link" href="mailto:?subject=Running%20Ollama%20AI%20in%20Your%20Homelab&amp;body=%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
   <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     </div>
@@ -278,7 +263,7 @@
  
 
 
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f&amp;title=Networking%20for%20AI&amp;summary=Networking%20for%20AI&amp;source=%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f&amp;title=Running%20Ollama%20AI%20in%20Your%20Homelab&amp;summary=Running%20Ollama%20AI%20in%20Your%20Homelab&amp;source=%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
   <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
     </div>
@@ -286,7 +271,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f&amp;resubmit=true&amp;title=Networking%20for%20AI" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f&amp;resubmit=true&amp;title=Running%20Ollama%20AI%20in%20Your%20Homelab" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
   <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
     </div>
@@ -297,7 +282,7 @@
  
 
 
-<a class="resp-sharing-button__link" href="whatsapp://send?text=Networking%20for%20AI%20%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Running%20Ollama%20AI%20in%20Your%20Homelab%20%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
   <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </div>
@@ -305,7 +290,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2f%2flocalhost%3a1313%2fposts%2fnetworking-for-ai%2f&amp;t=Networking%20for%20AI" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2f%2flocalhost%3a1313%2fposts%2frunning-ollama-ai-in-your-homelab%2f&amp;t=Running%20Ollama%20AI%20in%20Your%20Homelab" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
   <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
     </div>
