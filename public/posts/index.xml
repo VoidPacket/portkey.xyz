@@ -6,8 +6,158 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 11 Jul 2024 22:26:05 -0400</lastBuildDate>
+        <lastBuildDate>Sun, 14 Jul 2024 21:56:14 -0400</lastBuildDate>
         <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Understanding Trunk Ports</title>
+            <link>//localhost:1313/posts/understanding-trunk-ports/</link>
+            <pubDate>Sun, 14 Jul 2024 21:56:14 -0400</pubDate>
+            
+            <guid>//localhost:1313/posts/understanding-trunk-ports/</guid>
+            <description>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
+            <content type="html"><![CDATA[<p>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</p>
+<h3 id="what-is-a-trunk-port">What is a Trunk Port?</h3>
+<p>A trunk port is a type of switch port that is designed to carry traffic for multiple VLANs (Virtual Local Area Networks) across the network. Unlike access ports, which only carry traffic for a single VLAN, trunk ports can handle traffic from multiple VLANs simultaneously. This makes them essential for interconnecting switches and other network devices in a VLAN-segmented network.
+Trunk Ports vs. Access Ports</p>
+<h4 id="understanding-the-difference-between-trunk-and-access-ports-is-crucial-for-effective-network-design">Understanding the difference between trunk and access ports is crucial for effective network design:</h4>
+<ul>
+<li>
+<p><strong>Access Port:</strong> An access port connects a switch to end devices like computers, printers, or IP phones. It carries traffic for a single VLAN, which simplifies the network configuration for end devices that do not need to distinguish between VLANs.</p>
+</li>
+<li>
+<p><strong>Trunk Port:</strong> A trunk port, on the other hand, connects switches to each other or to other network devices that need to manage traffic from multiple VLANs. It tags the traffic with VLAN identifiers, allowing different VLANs to coexist on the same physical link.</p>
+</li>
+</ul>
+<h4 id="uses-of-trunk-ports">Uses of Trunk Ports</h4>
+<ul>
+<li>
+<p><strong>Uplinks to Other Switches:</strong> Trunk ports are commonly used for connecting switches to one another. This allows VLAN traffic to be carried across multiple switches, maintaining VLAN segmentation throughout the network.</p>
+</li>
+<li>
+<p><strong>Uplinks to Access Points:</strong> In wireless networks, trunk ports are used to connect switches to wireless access points (APs). This is crucial for supporting multiple SSIDs (each mapped to different VLANs), ensuring that wireless clients are properly segmented.</p>
+</li>
+</ul>
+<h4 id="configuring-trunk-ports-for-security">Configuring Trunk Ports for Security</h4>
+<p>Proper configuration of trunk ports is essential for maintaining network security and performance. Here are some best practices:</p>
+<p><strong>Restrict VLANs:</strong> By default, a trunk port can carry traffic for all VLANs. However, it&rsquo;s a best practice to restrict the VLANs allowed on a trunk port to only those that are necessary. This minimizes the risk of VLAN hopping attacks and reduces unnecessary traffic on the link.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>switchport trunk allowed vlan &lt;VLAN_IDs&gt;
+</span></span></code></pre></div><p><strong>VLAN Pruning:</strong> VLAN pruning is a technique used to limit the number of VLANs that can travel over a trunk link. By default, a trunk port can carry traffic for all VLANs, but this can lead to unnecessary traffic and potential security risks. VLAN pruning ensures that only the VLANs required for a particular trunk link are allowed to send traffic across it.
+How VLAN Pruning Works</p>
+<p>Imagine a scenario where you have three VLANs: VLAN 10, VLAN 20, and VLAN 30. Suppose you have two switches, Switch A and Switch B, connected via a trunk port. However, devices on Switch B only need access to VLAN 10 and VLAN 20. Without VLAN pruning, the trunk port would still carry traffic for VLAN 30, even though it&rsquo;s not needed on Switch B.</p>
+<p>With VLAN pruning, you can configure the trunk port to only allow traffic for VLANs 10 and 20, effectively blocking VLAN 30 from using that trunk link. This reduces unnecessary traffic and minimizes the risk of VLAN hopping attacks, where an attacker could potentially access VLANs they&rsquo;re not supposed to.
+Configuring VLAN Pruning</p>
+<p>To configure VLAN pruning, you would typically specify which VLANs are allowed on a trunk port. Here’s an example command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>switchport trunk allowed vlan 10,20
+</span></span></code></pre></div><p>In this example, only VLANs 10 and 20 are allowed on the trunk link, while VLAN 30 is pruned off.</p>
+<p><strong>Native VLAN:</strong> Ensure that the native VLAN (the VLAN for untagged traffic) is properly configured. Avoid using VLAN 1 as the native VLAN since it is the default and could be a target for attacks. Assign a different, unused VLAN as the native VLAN.
+The Importance of Using an Unused VLAN for the Native VLAN</p>
+<p>The native VLAN is the VLAN that carries untagged traffic on a trunk port. By default, this is VLAN 1, which can pose a security risk for several reasons:</p>
+<ul>
+<li>
+<p><strong>Common Target for Attacks:</strong> Since VLAN 1 is the default VLAN on most network devices, it is a common target for attackers. If an attacker gains access to VLAN 1, they could potentially disrupt or intercept untagged traffic.</p>
+</li>
+<li>
+<p><strong>Broadcast Storms:</strong> Using VLAN 1 as the native VLAN increases the risk of broadcast storms, which can lead to network congestion and outages.</p>
+</li>
+<li>
+<p><strong>Management Traffic:</strong> VLAN 1 often carries management traffic, making it more susceptible to being targeted in attacks.</p>
+</li>
+</ul>
+<p><strong>Best Practice:</strong> Use an Unused VLAN</p>
+<p>To mitigate these risks, it’s a best practice to assign an unused VLAN as the native VLAN. For example, if you have VLANs 10, 20, and 30 in use, you could assign VLAN 99 as the native VLAN:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>switchport trunk native vlan <span style="color:#ae81ff">99</span>
+</span></span></code></pre></div><p>This approach reduces the risk of VLAN hopping and ensures that your critical VLANs are protected.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>switchport trunk native vlan &lt;VLAN_ID&gt;
+</span></span></code></pre></div><p>Disable DTP: Dynamic Trunking Protocol (DTP) can automatically negotiate trunking on a port. For security reasons, it&rsquo;s advisable to disable DTP and manually configure trunking to prevent unauthorized devices from becoming trunks.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>switchport mode trunk
+</span></span><span style="display:flex;"><span>switchport nonegotiate
+</span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
+<p>Trunk ports are a fundamental component in VLAN-segmented networks, enabling the efficient and secure transport of traffic between switches and other network devices. By understanding the differences between trunk and access ports and following best practices for configuration, you can enhance both the performance and security of your network infrastructure. Remember, the goal is to maintain a streamlined, secure, and efficient network that meets the needs of your organization.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Running Ollama AI in Your Homelab</title>
+            <link>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</link>
+            <pubDate>Thu, 11 Jul 2024 22:26:05 -0400</pubDate>
+            
+            <guid>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</guid>
+            <description>Ollama https://ollama.com/
+Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.
+Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.</description>
+            <content type="html"><![CDATA[
+    <img src="/img/ollama.png"  alt="Ollama logo"  class="center"  style="border-radius: 8px;"  />
+
+
+<h1 id="ollama">Ollama</h1>
+<p><a href="https://ollama.com/">https://ollama.com/</a></p>
+<p>Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.</p>
+<h3 id="ollama-installation">Ollama installation</h3>
+<p>Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on <a href="https://ollama.com/">https://ollama.com/</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -fsSL https://ollama.com/install.sh | sh
+</span></span></code></pre></div><p>Once Ollama is installed we need to pull a model to use. I am going to use llama3 for this example but you can find many more listed here <a href="https://ollama.com/library">https://ollama.com/library</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ollama pull llama3
+</span></span></code></pre></div><p>Once the model finishes pulling you can run the model with the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ollama run llama3
+</span></span></code></pre></div><p>You should get an output asking you to send a message like this.</p>
+
+    <img src="/img/ollama_run.png"  alt="Ollama launching a model"  class="left"  style="border-radius: 8px;"  />
+
+
+<p>From here you can treat this like a local CLI version of chatGPT or any other AI you may have used previously. I asked llama3 to tell me a fun fact about the Roman Empire, heres what it returned.</p>
+
+    <img src="/img/ollama_funfact1.png"  alt="Ollama example"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>If you want to only utilize Ollama from the CLI, you are done and can stop here, but if you want a nicer user experience or to provide this local AI to other users, it would be much easier to do so with a web interface!</p>
+<h3 id="open-webui-installation">Open webui installation</h3>
+<p>The web interface we are going to be utilizing is a great open source tool called <strong>Open webui</strong> This runs on the same server as our Ollama instance, and infact calls to it and utilizes the models you have pulled down. We will be utilizing the recommended option of a Docker instance and following the information found hin the open webui documentation.</p>
+<p><a href="https://docs.openwebui.com/getting-started/">https://docs.openwebui.com/getting-started/</a></p>
+<p>But, before we can start with the Open Webui installation, we need to install Docker. Docker has a nice set of documentation as well walking us through removing old conflicting packages, to installing the latest version of Docker in our Ubuntu server.</p>
+<p><a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a></p>
+<p>To remove all conflicting out of date packages, we will run the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; <span style="color:#66d9ef">do</span> sudo apt-get remove $pkg; <span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p>after that is finished running we need to set up Docker&rsquo;s apt repository and add it into our apt sources.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Add Docker&#39;s official GPG key:</span>
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get install ca-certificates curl
+</span></span><span style="display:flex;"><span>sudo install -m <span style="color:#ae81ff">0755</span> -d /etc/apt/keyrings
+</span></span><span style="display:flex;"><span>sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+</span></span><span style="display:flex;"><span>sudo chmod a+r /etc/apt/keyrings/docker.asc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add the repository to Apt sources:</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">&#34;deb [arch=</span><span style="color:#66d9ef">$(</span>dpkg --print-architecture<span style="color:#66d9ef">)</span><span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  </span><span style="color:#66d9ef">$(</span>. /etc/os-release <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;</span>$VERSION_CODENAME<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span> | <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span></code></pre></div><p>Once you have the Docker apt repository added into your apt source, you can install the latest version of Docker.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+</span></span></code></pre></div><p>After Docker finishes installing you can run this command to verify it is working as expected. This command downloads a test image and runs it in a container. When the container runs, it will print a confirmation message and then exit.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo docker run hello-world
+</span></span></code></pre></div><p>Now that we have Docker&rsquo;s latest version installed on our Ubuntu server and confirmed it is functioning, we can proceed with the Open webui documentation. This should be relativeley quick as we are running Open webui on the same server as Ollama. We will be utilizing their recommended command to deploy the docker container to port 8080.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -d -p 3000:8080 --add-host<span style="color:#f92672">=</span>host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+</span></span></code></pre></div><p>Once this is running you should be able to reach your new Open webui Interface by browsing to your server IP port 8080 and be greeted with the Open webui login screen.</p>
+
+    <img src="/img/open_webui.png"  alt="Open webui login page"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Since this is your first time connecting to Open webui you will need to create a user account. The good news is that the first account created on the Open webui instance is the admin account. Also no data will leave your server, This is all explained in their FAQ.</p>
+
+    <img src="/img/open_webui_FAQ_data.png"  alt="Open Webui FAQ"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>I will ask the same example question on the web interface that we used for the CLI test. Lets learn another fun fact about the Roman Empire!</p>
+
+    <img src="/img/open_webui_funfact1.png"  alt="Open Webui fun fact example"  class="center"  style="border-radius: 8px;"  />
+
+
+<h3 id="wrapping-up">Wrapping up</h3>
+<p>As you explore the web interface, you&rsquo;ll notice a wealth of options at your disposal. I encourage you to experiment and learn what each feature does. The flexibility and customization options can significantly enhance your user experience. Additionally, take the time to explore the Ollama library. It offers a variety of models, each with unique capabilities. Trying out different models can help you find the perfect fit for your specific needs. Embrace this opportunity to expand your knowledge and creativity with your new AI setup!</p>
+]]></content>
+        </item>
         
         <item>
             <title>What Is a VLAN</title>
