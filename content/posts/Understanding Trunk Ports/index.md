@@ -87,6 +87,6 @@ Disable DTP: Dynamic Trunking Protocol (DTP) can automatically negotiate trunkin
 switchport mode trunk
 switchport nonegotiate
 ```
-### Conclusion
+### Final Thoughts
 
 Trunk ports are a fundamental component in VLAN-segmented networks, enabling the efficient and secure transport of traffic between switches and other network devices. By understanding the differences between trunk and access ports and following best practices for configuration, you can enhance both the performance and security of your network infrastructure. Remember, the goal is to maintain a streamlined, secure, and efficient network that meets the needs of your organization.

@@ -109,6 +109,6 @@ I will ask the same example question on the web interface that we used for the C
 {{< image src="/img/open_webui_funfact1.png" alt="Open Webui fun fact example" position="center" 
 style="border-radius: 8px;" >}}
 
-### Wrapping up
+### Final Thoughts
 
 As you explore the web interface, you'll notice a wealth of options at your disposal. I encourage you to experiment and learn what each feature does. The flexibility and customization options can significantly enhance your user experience. Additionally, take the time to explore the Ollama library. It offers a variety of models, each with unique capabilities. Trying out different models can help you find the perfect fit for your specific needs. Embrace this opportunity to expand your knowledge and creativity with your new AI setup!

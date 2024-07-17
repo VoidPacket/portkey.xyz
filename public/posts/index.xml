@@ -6,8 +6,116 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 14 Jul 2024 21:56:14 -0400</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jul 2024 21:32:35 -0400</lastBuildDate>
         <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Exploring Different Network Designs: LAN and WAN</title>
+            <link>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</link>
+            <pubDate>Tue, 16 Jul 2024 21:32:35 -0400</pubDate>
+            
+            <guid>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</guid>
+            <description>In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&amp;rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&amp;rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.</description>
+            <content type="html"><![CDATA[<p>In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.</p>
+<h3 id="lan-designs">LAN Designs</h3>
+<h5 id="three-tier-architecture"><strong>Three-Tier Architecture</strong></h5>
+<p><strong>Description:</strong> The three-tier architecture consists of core, distribution, and access layers.</p>
+<p><em>Core Layer:</em> High-speed backbone of the network, ensuring fast and efficient data transport.</p>
+<p><em>Distribution Layer:</em> Aggregates data from the access layer and implements policies such as routing and filtering.</p>
+<p><em>Access Layer:</em> Connects end devices like computers and phones to the network.</p>
+<pre><code>  Pros:
+    Scalability and modularity.
+    Simplified troubleshooting and management.
+    Clear separation of functions.
+
+  Cons:
+    Higher cost due to more equipment.
+    Potential complexity in implementation.
+</code></pre>
+<h5 id="collapsed-core-architecture"><strong>Collapsed Core Architecture</strong></h5>
+<p><strong>Description:</strong> Combines the core and distribution layers into a single layer, simplifying the design.</p>
+<pre><code>Pros:
+    Reduced cost and complexity.
+    Easier management and maintenance.
+    Suitable for smaller networks or enterprises.
+
+Cons:
+    Limited scalability compared to three-tier.
+    Potential for reduced performance in large networks.
+</code></pre>
+<h5 id="campus-network-design"><strong>Campus Network Design</strong></h5>
+<p><strong>Description:</strong> Designed for large campus environments, integrating multiple buildings and departments.</p>
+<pre><code>Pros:
+    Scalable and flexible.
+    Centralized management.
+    Enhanced performance and security.
+
+Cons:
+    Higher initial setup cost.
+    Requires comprehensive planning and management.
+</code></pre>
+<h5 id="spine-and-leaf-architecture"><strong>Spine-and-Leaf Architecture</strong></h5>
+<p><strong>Description:</strong> A modern design used in data centers, featuring spine (core) switches connected to leaf (access) switches.</p>
+<pre><code>Pros:
+    High performance and low latency.
+    Scalability by adding more leaf switches.
+    Equal-cost multipath routing for load balancing.
+
+Cons:
+    Initial setup can be complex.
+    Potentially higher cost for specialized hardware.
+</code></pre>
+<h3 id="wan-designs">WAN Designs</h3>
+<h5 id="hub-and-spoke-design"><strong>Hub-and-Spoke Design</strong></h5>
+<p><strong>Description:</strong> A central hub connects to multiple spoke sites, with all communication passing through the hub.</p>
+<pre><code>Pros:
+    Simplified management with a central control point.
+    Cost-effective for smaller networks.
+
+Cons:
+    Potential bottleneck at the hub.
+    Reduced redundancy; hub failure affects all spokes.
+</code></pre>
+<h5 id="full-mesh-design"><strong>Full Mesh Design</strong></h5>
+<p><strong>Description:</strong> Every site is interconnected with every other site, providing multiple paths for data.</p>
+<pre><code>Pros:
+    High redundancy and fault tolerance.
+    Optimal performance with direct communication paths.
+
+Cons:
+    High cost and complexity.
+    Challenging to manage in large networks.
+</code></pre>
+<h5 id="partial-mesh-design"><strong>Partial Mesh Design</strong></h5>
+<p><strong>Description:</strong> Some sites are interconnected, providing a balance between hub-and-spoke and full mesh.</p>
+<pre><code>Pros:
+    Improved redundancy over hub-and-spoke.
+    Lower cost and complexity compared to full mesh.
+
+Cons:
+    Still more complex than hub-and-spoke.
+    Redundancy not as robust as full mesh.
+</code></pre>
+<h3 id="choosing-the-right-design">Choosing the Right Design</h3>
+<p>The choice of network design depends on various factors, including the size and requirements of your organization, budget, and future scalability needs. Here are a few considerations to keep in mind:</p>
+<ul>
+<li>
+<p>Three-Tier vs. Collapsed Core: Choose three-tier for large, scalable environments needing clear separation of functions. Opt for collapsed core in smaller environments where simplicity and cost are priorities.</p>
+</li>
+<li>
+<p>Campus Network: Ideal for large educational institutions or corporate campuses requiring centralized management and high performance.</p>
+</li>
+<li>
+<p>Spine-and-Leaf: Best suited for data centers needing high performance, scalability, and low latency.</p>
+</li>
+<li>
+<p>Hub-and-Spoke vs. Mesh: Use hub-and-spoke for smaller networks with centralized control. Opt for mesh designs in larger, more complex networks where redundancy and performance are critical.</p>
+</li>
+</ul>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>Understanding the different types of network designs and their respective pros and cons is crucial for creating an efficient and reliable network infrastructure. Whether you&rsquo;re working with LAN or WAN designs, selecting the right architecture will ensure your network meets both current and future demands.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Understanding Trunk Ports</title>
@@ -73,7 +181,7 @@ The Importance of Using an Unused VLAN for the Native VLAN</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>switchport mode trunk
 </span></span><span style="display:flex;"><span>switchport nonegotiate
-</span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
+</span></span></code></pre></div><h3 id="final-thoughts">Final Thoughts</h3>
 <p>Trunk ports are a fundamental component in VLAN-segmented networks, enabling the efficient and secure transport of traffic between switches and other network devices. By understanding the differences between trunk and access ports and following best practices for configuration, you can enhance both the performance and security of your network infrastructure. Remember, the goal is to maintain a streamlined, secure, and efficient network that meets the needs of your organization.</p>
 ]]></content>
         </item>
@@ -154,7 +262,7 @@ Ollama installation Starting out, we will be installing this into an Ubuntu virt
     <img src="/img/open_webui_funfact1.png"  alt="Open Webui fun fact example"  class="center"  style="border-radius: 8px;"  />
 
 
-<h3 id="wrapping-up">Wrapping up</h3>
+<h3 id="final-thoughts">Final Thoughts</h3>
 <p>As you explore the web interface, you&rsquo;ll notice a wealth of options at your disposal. I encourage you to experiment and learn what each feature does. The flexibility and customization options can significantly enhance your user experience. Additionally, take the time to explore the Ollama library. It offers a variety of models, each with unique capabilities. Trying out different models can help you find the perfect fit for your specific needs. Embrace this opportunity to expand your knowledge and creativity with your new AI setup!</p>
 ]]></content>
         </item>

@@ -14,7 +14,7 @@
       <link>//localhost:1313/posts/understanding-trunk-ports/</link>
       <pubDate>Sun, 14 Jul 2024 21:56:14 -0400</pubDate>
       <guid>//localhost:1313/posts/understanding-trunk-ports/</guid>
-      <description>Understanding Trunk Ports: A Key Component in Network Engineering&#xA;In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
+      <description>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
     </item>
     <item>
       <title>What Is a VLAN</title>
