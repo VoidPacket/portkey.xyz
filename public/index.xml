@@ -17,13 +17,6 @@
       <description>In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&amp;rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&amp;rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.</description>
     </item>
     <item>
-      <title>Understanding Trunk Ports</title>
-      <link>//localhost:1313/posts/understanding-trunk-ports/</link>
-      <pubDate>Sun, 14 Jul 2024 21:56:14 -0400</pubDate>
-      <guid>//localhost:1313/posts/understanding-trunk-ports/</guid>
-      <description>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
-    </item>
-    <item>
       <title>Running Ollama AI in Your Homelab</title>
       <link>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</link>
       <pubDate>Thu, 11 Jul 2024 22:26:05 -0400</pubDate>
@@ -31,18 +24,25 @@
       <description>Ollama https://ollama.com/&#xA;Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.&#xA;Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.</description>
     </item>
     <item>
-      <title>What Is a VLAN</title>
-      <link>//localhost:1313/posts/what-is-a-vlan/</link>
-      <pubDate>Wed, 10 Jul 2024 11:50:59 -0400</pubDate>
-      <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
-      <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&#xA;Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
-    </item>
-    <item>
       <title>About Me</title>
       <link>//localhost:1313/about/</link>
       <pubDate>Tue, 02 Jul 2024 13:12:33 -0400</pubDate>
       <guid>//localhost:1313/about/</guid>
       <description>Hello! I’m Bryan Wassel, a passionate network engineer with over 15 years of experience in the IT industry, including more than 6 years specializing in Network Engineering. I have a knack for making complex systems simple and reliable, and I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.&#xA;At Portkey, my goal is to create a space where people can learn and explore different topics in network engineering.</description>
+    </item>
+    <item>
+      <title>Understanding Trunk Ports</title>
+      <link>//localhost:1313/posts/understanding-trunk-ports/</link>
+      <pubDate>Fri, 14 Jun 2024 21:56:14 -0400</pubDate>
+      <guid>//localhost:1313/posts/understanding-trunk-ports/</guid>
+      <description>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
+    </item>
+    <item>
+      <title>What Is a VLAN</title>
+      <link>//localhost:1313/posts/what-is-a-vlan/</link>
+      <pubDate>Fri, 10 May 2024 11:50:59 -0400</pubDate>
+      <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
+      <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&#xA;Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
     </item>
     <item>
       <title>Networking for AI</title>

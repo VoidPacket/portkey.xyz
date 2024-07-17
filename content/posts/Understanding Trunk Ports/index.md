@@ -1,6 +1,6 @@
 ---
 title: "Understanding Trunk Ports"
-date: 2024-07-14T21:56:14-04:00
+date: 2024-06-14T21:56:14-04:00
 toc: false
 images:
 tags:
