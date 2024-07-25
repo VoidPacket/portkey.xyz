@@ -15,13 +15,29 @@ Let's dive into something that's at the core of how the internet works: **BGP**,
 
 Imagine the internet as a massive collection of networks, each like a neighborhood. These neighborhoods are called Autonomous Systems (AS). Each AS could be an internet service provider (ISP), a university, a business, or any entity that operates a network.
 
-BGP is the protocol these ASes use to talk to each other. When data needs to travel from one AS to another, BGP helps decide the best path. Here’s a simple breakdown of the process:
+BGP is the protocol these ASes use to talk to each other. When data needs to travel from one AS to another, BGP helps decide the best path. 
 
-- **Path Selection:** BGP doesn’t just pick any route. It looks for the most efficient path, considering factors like the number of hops (how many networks the data must pass through) and policy rules set by network administrators.
+Here’s a step-by-step breakdown of how BGP operates:
 
-- **Routing Table Updates:** BGP routers maintain a table of paths to various networks. They constantly update these tables based on information from other BGP routers. This ensures they always know the best path to send data.
+- **Establishing a BGP Connection:** The first step is to establish a BGP connection with your peer router. This connection, known as a BGP session, is set up between BGP routers (also called BGP speakers) in different ASes for eBGP or within the same AS for iBGP.
 
-- **Advertising Routes:** Each AS advertises its presence and the networks it can reach to its neighboring ASes. This way, everyone knows which paths are available and can make informed routing decisions.
+- **Configuring Route Advertisements:** Next, you configure which routes you want to advertise to your peer. This could include specific networks within your AS that you want others to know about. You also decide which routes you want to redistribute from other routing protocols into BGP.
+
+- **Agreeing on Accepted Routes:** You then work with your peer to agree on what routes you will accept from them. This can be the full routing table, a summarized version, or just the default route, depending on your network requirements and policies.
+
+- **Establishing Additional BGP Peers:** You repeat the process with any other BGP peers you have. Each peer connection adds to the pool of routing information available to your network.
+
+- **Initial Routing Table:** Once all BGP peers are configured, you obtain an initial routing table. BGP then uses various metrics and attributes to decide the preferred routes. Some key metrics include:
+
+  - *AS Path:* The number of ASes a route must traverse. Shorter AS paths are preferred.
+  - *Next-Hop:* The IP address to which packets should be forwarded.
+  - *Local Preference:* A value set within an AS to prefer one path over another.
+  - *Multi-Exit Discriminator (MED):* Suggests preferred entry points into an AS when multiple paths exist.
+  - *Weight:* Cisco-specific attribute that influences route preference locally on the router where it is configured.
+
+**Routing Table Updates:** BGP routers continually update their routing tables based on information received from their peers. For example, if one of your BGP peers loses a route to a specific network, it sends an update. BGP evaluates the new information and modifies the routing table to reflect the best available path.
+
+   *Example Scenario:* Suppose you have two BGP peers. Peer A loses its route to Network X. Peer A sends an update indicating this loss. BGP will then check if Peer B has a route to Network X. If Peer B has a valid route, BGP updates the routing table to prefer Peer B's path. This ensures that data can still reach Network X despite the loss of the route through Peer A.
 
 ## Why is BGP Important?
 
