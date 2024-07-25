@@ -7,19 +7,33 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 14 Jul 2024 21:56:14 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2024 19:51:16 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamic Routing Protocols   BGP</title>
+      <link>//localhost:1313/posts/dynamic-routing-protocols---bgp/</link>
+      <pubDate>Wed, 24 Jul 2024 19:51:16 -0400</pubDate>
+      <guid>//localhost:1313/posts/dynamic-routing-protocols---bgp/</guid>
+      <description>Today, let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: BGP, or Border Gateway Protocol. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic.&#xA;What is BGP? BGP stands for Border Gateway Protocol. Think of it as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.</description>
+    </item>
+    <item>
+      <title>Exploring Different Network Designs: LAN and WAN</title>
+      <link>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</link>
+      <pubDate>Tue, 16 Jul 2024 21:32:35 -0400</pubDate>
+      <guid>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</guid>
+      <description>In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&amp;rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&amp;rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.</description>
+    </item>
     <item>
       <title>Understanding Trunk Ports</title>
       <link>//localhost:1313/posts/understanding-trunk-ports/</link>
-      <pubDate>Sun, 14 Jul 2024 21:56:14 -0400</pubDate>
+      <pubDate>Fri, 14 Jun 2024 21:56:14 -0400</pubDate>
       <guid>//localhost:1313/posts/understanding-trunk-ports/</guid>
       <description>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
     </item>
     <item>
       <title>What Is a VLAN</title>
       <link>//localhost:1313/posts/what-is-a-vlan/</link>
-      <pubDate>Wed, 10 Jul 2024 11:50:59 -0400</pubDate>
+      <pubDate>Fri, 10 May 2024 11:50:59 -0400</pubDate>
       <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
       <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&#xA;Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
     </item>

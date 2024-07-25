@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Routing on Portkey</title>
+    <link>//localhost:1313/tags/routing/</link>
+    <description>Recent content in Routing on Portkey</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 24 Jul 2024 19:51:16 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/routing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamic Routing Protocols   BGP</title>
+      <link>//localhost:1313/posts/dynamic-routing-protocols---bgp/</link>
+      <pubDate>Wed, 24 Jul 2024 19:51:16 -0400</pubDate>
+      <guid>//localhost:1313/posts/dynamic-routing-protocols---bgp/</guid>
+      <description>Today, let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: BGP, or Border Gateway Protocol. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic.&#xA;What is BGP? BGP stands for Border Gateway Protocol. Think of it as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.</description>
+    </item>
+  </channel>
+</rss>

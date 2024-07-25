@@ -7,12 +7,12 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 10 Jul 2024 11:50:59 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2024 11:50:59 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Is a VLAN</title>
       <link>//localhost:1313/posts/what-is-a-vlan/</link>
-      <pubDate>Wed, 10 Jul 2024 11:50:59 -0400</pubDate>
+      <pubDate>Fri, 10 May 2024 11:50:59 -0400</pubDate>
       <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
       <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&#xA;Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
     </item>
