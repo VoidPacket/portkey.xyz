@@ -71,6 +71,8 @@ paginate     = 10
     tag      = "tags"
     series   = "series"
 
+googleAnalytics = "G-48ZTXRYVKK"
+
 [languages]
   [languages.en]
     title = "Portkey"
