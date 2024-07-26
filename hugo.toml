@@ -3,6 +3,7 @@ title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
+googleAnalytics = "G-48ZTXRYVKK"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -71,7 +72,6 @@ paginate     = 10
     tag      = "tags"
     series   = "series"
 
-googleAnalytics = "G-48ZTXRYVKK"
 
 [languages]
   [languages.en]
