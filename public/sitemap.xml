@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/tags/networking/</loc>
+    <lastmod>2024-08-03T21:26:09-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-08-03T21:26:09-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2024-08-03T21:26:09-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-08-03T21:26:09-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/understanding-dhcp---the-magic-behind-automatic-ip-assignment/</loc>
+    <lastmod>2024-08-03T21:26:09-04:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/dynamic-routing-protocols---bgp/</loc>
     <lastmod>2024-07-24T19:51:16-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/networking/</loc>
-    <lastmod>2024-07-24T19:51:16-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2024-07-24T19:51:16-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2024-07-24T19:51:16-04:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/routing/</loc>
-    <lastmod>2024-07-24T19:51:16-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-07-24T19:51:16-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</loc>
