@@ -4,11 +4,18 @@
     <title>Portkey</title>
     <link>//localhost:1313/</link>
     <description>Recent content on Portkey</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 03 Aug 2024 21:26:09 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2024 17:49:51 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Network Address Translation and How Does It Work?</title>
+      <link>//localhost:1313/posts/what-is-network-address-translation-and-how-does-it-work/</link>
+      <pubDate>Sun, 01 Sep 2024 17:49:51 -0400</pubDate>
+      <guid>//localhost:1313/posts/what-is-network-address-translation-and-how-does-it-work/</guid>
+      <description>Understanding Network Address Translation (NAT) and Its Uses In today’s networking environments, Network Address Translation (NAT) plays a crucial role in connecting devices and maintaining network security. This article will explore what NAT is, the different types of NAT, and how it is used in various network scenarios. What is Network Address Translation (NAT)?&#xA;Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet.</description>
+    </item>
     <item>
       <title>Understanding DHCP: The Magic Behind Automatic IP Assignment</title>
       <link>//localhost:1313/posts/understanding-dhcp---the-magic-behind-automatic-ip-assignment/</link>
