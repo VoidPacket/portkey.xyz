@@ -4,9 +4,10 @@
     <title>Portkey</title>
     <link>//localhost:1313/</link>
     <description>Recent content on Portkey</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+<<<<<<< HEAD
     <lastBuildDate>Tue, 31 Dec 2024 14:51:47 -0500</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -15,6 +16,16 @@
       <pubDate>Tue, 31 Dec 2024 14:51:47 -0500</pubDate>
       <guid>//localhost:1313/posts/a-look-back-at-2024/</guid>
       <description>Reflecting on 2024 and Looking Ahead to 2025&#xA;As the year comes to a close, I like to reflect on the choices I’ve made and the things I’ve accomplished. This process helps me take stock of where I am and what I’ve achieved over the year, while also setting goals to aim for in the coming year.&#xA;Career Shift One of the biggest changes this year was changing jobs. In the fall, I transitioned from working as a Sr.</description>
+=======
+    <lastBuildDate>Sun, 01 Sep 2024 17:49:51 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Network Address Translation and How Does It Work?</title>
+      <link>//localhost:1313/posts/what-is-network-address-translation-and-how-does-it-work/</link>
+      <pubDate>Sun, 01 Sep 2024 17:49:51 -0400</pubDate>
+      <guid>//localhost:1313/posts/what-is-network-address-translation-and-how-does-it-work/</guid>
+      <description>Understanding Network Address Translation (NAT) and Its Uses In today’s networking environments, Network Address Translation (NAT) plays a crucial role in connecting devices and maintaining network security. This article will explore what NAT is, the different types of NAT, and how it is used in various network scenarios. What is Network Address Translation (NAT)?&#xA;Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet.</description>
+>>>>>>> 9235228942d62c164ff6f8722b1344e2c48fd23d
     </item>
     <item>
       <title>Understanding DHCP: The Magic Behind Automatic IP Assignment</title>
