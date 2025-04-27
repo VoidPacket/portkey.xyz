@@ -2,7 +2,8 @@ baseurl      = "portkey.xyz"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
-paginate     = 10
+[pagination]
+  pagerSize = 10
 googleAnalytics = "G-48ZTXRYVKK"
 
 [params]

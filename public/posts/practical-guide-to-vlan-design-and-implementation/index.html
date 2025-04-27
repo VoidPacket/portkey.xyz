@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Practical Guide to VLAN Design and Implementation Introduction In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.
+Why VLAN Design Matters Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.
+" />
+<meta name="keywords" content="homepage, blog, networking, security" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/" />
+
+
+    <title>
+        
+            Practical Guide to VLAN Design and Implementation :: Portkey 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.72913e72eb45a1e57b42efa9014ca9f3b87b95b3863c77b85a7ea72dbaa27628.css" integrity="sha256-cpE&#43;cutFoeV7Qu&#43;pAUyp87h7lbOGPHe4Wn6nLbqidig=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Practical Guide to VLAN Design and Implementation">
+  <meta itemprop="description" content="Practical Guide to VLAN Design and Implementation Introduction In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.
+Why VLAN Design Matters Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.">
+  <meta itemprop="datePublished" content="2024-11-20T19:50:07-05:00">
+  <meta itemprop="dateModified" content="2024-11-20T19:50:07-05:00">
+  <meta itemprop="wordCount" content="765">
+  <meta itemprop="image" content="//localhost:1313/">
+  <meta itemprop="keywords" content="Networking,Security">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/">
+  <meta name="twitter:title" content="Practical Guide to VLAN Design and Implementation">
+  <meta name="twitter:description" content="Practical Guide to VLAN Design and Implementation Introduction In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.
+Why VLAN Design Matters Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.">
+
+
+
+    <meta property="og:url" content="//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/">
+  <meta property="og:site_name" content="Portkey">
+  <meta property="og:title" content="Practical Guide to VLAN Design and Implementation">
+  <meta property="og:description" content="Practical Guide to VLAN Design and Implementation Introduction In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.
+Why VLAN Design Matters Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-20T19:50:07-05:00">
+    <meta property="article:modified_time" content="2024-11-20T19:50:07-05:00">
+    <meta property="article:tag" content="Networking">
+    <meta property="article:tag" content="Security">
+    <meta property="og:image" content="//localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-11-20 19:50:07 -0500 EST" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark"> </span>
+            <span class="logo__text ">
+                Portkey(Config)#</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/">Home</a></li><li><a href="/posts">Blog</a></li><li><a href="/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/">Practical Guide to VLAN Design and Implementation</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <h3 id="practical-guide-to-vlan-design-and-implementation">Practical Guide to VLAN Design and Implementation</h3>
+<h4 id="introduction">Introduction</h4>
+<p>In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.</p>
+<hr>
+<h3 id="why-vlan-design-matters">Why VLAN Design Matters</h3>
+<p>Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.</p>
+<ul>
+<li><strong>Enhanced Security</strong>: Segmentation limits the exposure of sensitive data. By isolating different types of traffic, such as IoT devices, user endpoints, and critical infrastructure (e.g., servers, VoIP), you can prevent lateral movement during security incidents.</li>
+<li><strong>Improved Performance</strong>: Grouping devices that need to communicate frequently in the same VLAN can reduce broadcast traffic and optimize network resources.</li>
+<li><strong>Scalability and Flexibility</strong>: Properly segmented VLANs make it easier to scale the network as the business grows, enabling smooth integration of new devices and services without overwhelming the network.</li>
+</ul>
+<hr>
+<h3 id="best-practices-for-vlan-design">Best Practices for VLAN Design</h3>
+<ol>
+<li>
+<p><strong>Plan Based on Business Requirements</strong></p>
+<ul>
+<li><strong>Understanding Roles and Departments</strong>: Identify the key groups within your organization that need separate network segments. These could include departments like HR, finance, guest networks, and critical services like voice (VoIP) or security cameras.</li>
+<li><strong>Identify Critical Devices and Services</strong>: Think about how network services like servers, printers, and wireless access points fit into your VLAN structure.</li>
+</ul>
+</li>
+<li>
+<p><strong>Segment Based on Functionality</strong></p>
+<ul>
+<li><strong>User VLANs</strong>: Group users by department or role (e.g., HR, IT, Sales).</li>
+<li><strong>Voice VLANs</strong>: Dedicate a VLAN for VoIP traffic to ensure high-quality, low-latency communications.</li>
+<li><strong>Management VLANs</strong>: Use a dedicated VLAN for managing infrastructure devices like switches and firewalls.</li>
+<li><strong>Guest VLANs</strong>: Isolate external or guest devices onto their own VLAN to ensure they cannot access internal resources.</li>
+</ul>
+</li>
+<li>
+<p><strong>Keep VLAN Sprawl in Check</strong></p>
+<ul>
+<li>Avoid creating too many VLANs, as this can lead to complexity and increased management overhead. Each VLAN should serve a clear purpose.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="implementing-vlans-with-a-layered-approach">Implementing VLANs with a Layered Approach</h3>
+<p>When designing and implementing VLANs, it’s important to understand how VLANs function at both Layer 2 (data link layer) and Layer 3 (network layer) of the OSI model. This layered approach ensures logical segmentation while enabling necessary communication.</p>
+<h4 id="layer-2-vlans-basic-segmentation">Layer 2 VLANs: Basic Segmentation</h4>
+<ul>
+<li><strong>Access Ports</strong>: Assigned to end devices and carry traffic for a single VLAN.</li>
+<li><strong>Trunk Ports</strong>: Carry traffic for multiple VLANs between switches using 802.1Q tagging.</li>
+</ul>
+<h4 id="layer-3-vlans-enabling-communication">Layer 3 VLANs: Enabling Communication</h4>
+<ul>
+<li><strong>Switch Virtual Interfaces (SVIs)</strong>: Virtual gateways for inter-VLAN routing on a Layer 3 switch.</li>
+<li><strong>Router-on-a-Stick</strong>: A single router interface configured for multiple VLANs using subinterfaces.</li>
+</ul>
+<h4 id="inter-vlan-routing">Inter-VLAN Routing</h4>
+<ul>
+<li>Use a Layer 3 switch for efficient routing between VLANs, especially in larger networks.</li>
+<li>Configure ACLs to restrict unnecessary traffic between VLANs.</li>
+</ul>
+<h4 id="vlan-trunking">VLAN Trunking</h4>
+<ul>
+<li>Use <strong>802.1Q tagging</strong> to allow VLAN traffic across multiple switches.</li>
+<li>Restrict allowed VLANs on trunk ports to reduce unnecessary traffic.</li>
+</ul>
+<hr>
+<h3 id="practical-design-example-setting-up-vlans-for-a-new-office">Practical Design Example: Setting Up VLANs for a New Office</h3>
+<h4 id="scenario-overview">Scenario Overview</h4>
+<p>We’ll design a network for an office with finance, HR, sales, and IT departments, a small server presence, VoIP phones, and considerations for wireless and guest access. A <strong>/16 network</strong> in the <strong>10.x.x.x</strong> range will be used for the site, divided into <strong>/24 subnets</strong>.</p>
+<h4 id="step-1-network-management-and-server-vlans">Step 1: Network Management and Server VLANs</h4>
+<ul>
+<li><strong>VLAN 1 (Network Management)</strong>: Subnet <strong>10.0.1.0/24</strong>, restricted to IT for managing switches, firewalls, and controllers.</li>
+<li><strong>VLAN 2 (Servers)</strong>: Subnet <strong>10.0.2.0/24</strong>, hosting DNS, DHCP, and AD.</li>
+</ul>
+<h4 id="step-2-department-based-vlans">Step 2: Department-Based VLANs</h4>
+<ul>
+<li><strong>VLAN 10 (Finance)</strong>: Subnet <strong>10.0.10.0/24</strong>, isolating sensitive financial data.</li>
+<li><strong>VLAN 20 (HR)</strong>: Subnet <strong>10.0.20.0/24</strong>, securing employee records.</li>
+<li><strong>VLAN 30 (Sales)</strong>: Subnet <strong>10.0.30.0/24</strong>, managing sales traffic.</li>
+<li><strong>VLAN 40 (IT)</strong>: Subnet <strong>10.0.40.0/24</strong>, giving IT a dedicated space.</li>
+</ul>
+<h4 id="step-3-voip-vlan">Step 3: VoIP VLAN</h4>
+<ul>
+<li><strong>VLAN 50 (Voice)</strong>: Subnet <strong>10.0.50.0/24</strong>, prioritizing voice traffic.</li>
+</ul>
+<h4 id="step-4-corporate-wireless-and-guest-vlans">Step 4: Corporate Wireless and Guest VLANs</h4>
+<ul>
+<li><strong>VLAN 80 (Corporate Wireless)</strong>: Subnet <strong>10.0.80.0/24</strong>, for employee wireless devices.</li>
+<li><strong>VLAN 200 (Guest)</strong>: Subnet <strong>10.0.200.0/24</strong>, isolated for visitor access to the internet only.</li>
+</ul>
+<h4 id="step-5-inter-vlan-routing">Step 5: Inter-VLAN Routing</h4>
+<ul>
+<li><strong>SVIs</strong>: Each VLAN has a corresponding gateway (e.g., <strong>10.0.1.1</strong> for VLAN 1, <strong>10.0.10.1</strong> for VLAN 10).</li>
+<li><strong>ACLs</strong>: Control traffic between VLANs, e.g., allowing wireless to access servers but isolating guests.</li>
+</ul>
+<h4 id="step-6-vlan-trunking">Step 6: VLAN Trunking</h4>
+<ul>
+<li><strong>802.1Q</strong>: Used to carry VLAN traffic across switches, with allowed VLANs restricted on trunk ports.</li>
+</ul>
+<hr>
+<h3 id="conclusion-final-design-overview">Conclusion: Final Design Overview</h3>
+<p>This design ensures:</p>
+<ul>
+<li>Logical segmentation using a structured 10.x.x.x scheme.</li>
+<li>Lower VLAN numbers for foundational infrastructure.</li>
+<li>A higher VLAN number for the guest network to facilitate expansion.</li>
+<li>A flexible, secure, and scalable infrastructure ready for future growth.</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="//localhost:1313/tags/networking/">networking</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/security/">security</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        765 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-11-20 19:50
+        
+
+         
+          
+        
+      </p>
+    </div>
+      <hr />
+      <div class="sharing-buttons">
+        
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+ 
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=Practical%20Guide%20to%20VLAN%20Design%20and%20Implementation&amp;body=%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    </div>
+  </div>
+</a>
+
+
+ 
+
+
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f&amp;title=Practical%20Guide%20to%20VLAN%20Design%20and%20Implementation&amp;summary=Practical%20Guide%20to%20VLAN%20Design%20and%20Implementation&amp;source=%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f&amp;resubmit=true&amp;title=Practical%20Guide%20to%20VLAN%20Design%20and%20Implementation" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+ 
+
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Practical%20Guide%20to%20VLAN%20Design%20and%20Implementation%20%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2f%2flocalhost%3a1313%2fposts%2fpractical-guide-to-vlan-design-and-implementation%2f&amp;t=Practical%20Guide%20to%20VLAN%20Design%20and%20Implementation" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+
+      </div>
+
+    
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -6,9 +6,72 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-<<<<<<< HEAD
-        <lastBuildDate>Tue, 31 Dec 2024 14:51:47 -0500</lastBuildDate>
+        <lastBuildDate>Sun, 27 Apr 2025 13:46:01 -0400</lastBuildDate>
         <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Pets vs Cattle</title>
+            <link>//localhost:1313/posts/pets-vs-cattle/</link>
+            <pubDate>Sun, 27 Apr 2025 13:46:01 -0400</pubDate>
+            
+            <guid>//localhost:1313/posts/pets-vs-cattle/</guid>
+            <description>&lt;img src=&#34;//localhost:1313/img/pet-vs-cattle.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 28px;&#34;  /&gt;
+
+
+&lt;h3 id=&#34;from-pets-to-cattle-changing-how-we-think-about-networks-and-servers&#34;&gt;From Pets to Cattle: Changing How We Think About Networks and Servers&lt;/h3&gt;
+&lt;p&gt;When you first get into IT, it’s natural to treat every server and network device like a pet. You name them, you care for them, you spend time fixing them when they get sick. You might even have some favorites you secretly root for. It’s kind of like having a dog. You don’t just replace a dog when it gets sick. You do whatever you can to heal it.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[
+    <img src="/img/pet-vs-cattle.png"  alt="Image created by ChatGPT"  class="center"  style="border-radius: 28px;"  />
+
+
+<h3 id="from-pets-to-cattle-changing-how-we-think-about-networks-and-servers">From Pets to Cattle: Changing How We Think About Networks and Servers</h3>
+<p>When you first get into IT, it’s natural to treat every server and network device like a pet. You name them, you care for them, you spend time fixing them when they get sick. You might even have some favorites you secretly root for. It’s kind of like having a dog. You don’t just replace a dog when it gets sick. You do whatever you can to heal it.</p>
+<p>For a long time, this was just how things were done. Servers were built by hand. Network devices were configured line-by-line on the CLI. If something broke, you <em>had</em> to fix it. Rebuilding wasn&rsquo;t easy, and automation was either too expensive or just out of reach for most teams.</p>
+<p>But as environments grew bigger and more complex, this &ldquo;pets&rdquo; mentality stopped making sense. You can’t individually care for hundreds or thousands of servers and switches like that. That’s when the idea of treating infrastructure like <strong>cattle</strong> started to catch on.</p>
+<p>Instead of hand-raising every machine, you design systems to be easily replaceable. If a server or device has a problem, you don&rsquo;t spend hours nursing it back to health. You spin up a new one and move on. The goal shifts from saving the individual machine to keeping the overall environment healthy.</p>
+<hr>
+<h2 id="why-this-shift-matters">Why This Shift Matters</h2>
+<p>The old way of treating infrastructure like pets made sense when you only had a few systems. But as technology has grown, so has the need for speed, consistency, and scale.<br>
+Modern environments demand a different approach — one where resilience and automation are built into everything from day one.</p>
+<p>Rather than being the firefighter who knows every server inside and out, the goal now is to design systems that <strong>don&rsquo;t catch fire</strong> in the first place.</p>
+<hr>
+<h2 id="automation-is-what-makes-this-possible">Automation is What Makes This Possible</h2>
+<p>Rather than manually configuring every system, we define how things <em>should</em> look and let automation take care of the rest.</p>
+<h3 id="networking-automation">Networking Automation</h3>
+<p>On the <strong>network side</strong>, one of the ways to start moving toward this model is by using <strong>NetBox</strong> as your design source of truth.<br>
+Instead of keeping designs in spreadsheets or tribal knowledge, you document everything centrally.<br>
+Then, with tools like <strong>Ansible</strong>, you can automatically generate and deploy network configurations.</p>
+<p>Need to bring up a new switch or firewall? Pull the details from NetBox, push the config with Ansible, and you are ready to go.</p>
+<blockquote>
+<h4 id="networking-automation-flow">Networking Automation Flow</h4>
+<p><em>Design:</em> Document network topology and device roles in NetBox</p>
+<p><em>Source of Truth:</em> NetBox holds IPs, VLANs, devices, and relationships</p>
+<p><em>Automation Engine:</em> Use Ansible to pull info from NetBox</p>
+<p><em>Deployment:</em> Push configurations to switches, routers, and firewalls</p>
+<p><em>Verification:</em> Optionally run tests post-deployment (ping tests, config checks)</p></blockquote>
+<hr>
+<h3 id="server-automation">Server Automation</h3>
+<p>On the <strong>server side</strong>, tools like <strong>Terraform</strong> and <strong>Docker</strong> come into play.</p>
+<p>Terraform lets you define infrastructure as code, from virtual machines to storage and networking.<br>
+Docker handles packaging and running applications in clean, portable containers.</p>
+<p>If a server goes down, you do not panic. You redeploy with Terraform and spin your containers back up just like before.</p>
+<blockquote>
+<h4 id="server-automation-flow">Server Automation Flow</h4>
+<p><em>Infrastructure as Code:</em> Define servers, networks, and storage with Terraform</p>
+<p><em>Provisioning:</em> Terraform builds VMs, cloud resources, or even bare metal</p>
+<p><em>Application Layer:</em> Package apps into containers with Docker</p>
+<p><em>Deployment:</em> Deploy containers to new or rebuilt infrastructure</p>
+<p><em>Scaling and Recovery:</em> Redeploy or scale automatically by updating definitions</p></blockquote>
+<hr>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Switching from a pets mindset to a cattle mindset is not about caring less — it’s about designing better from the beginning.<br>
+It’s about building environments that are resilient, consistent, and easy to grow.</p>
+<p>Automation is what enables this shift.<br>
+By treating your infrastructure as something that can be rebuilt at any time, you gain freedom.<br>
+Freedom to scale, freedom to recover quickly, and freedom to focus your energy on building rather than constantly firefighting.</p>
+<p>It might feel strange at first, but once you embrace this new way of thinking, it becomes hard to imagine doing it any other way.</p>
+]]></content>
+        </item>
         
         <item>
             <title>A Look Back at 2024</title>
@@ -16,9 +79,10 @@
             <pubDate>Tue, 31 Dec 2024 14:51:47 -0500</pubDate>
             
             <guid>//localhost:1313/posts/a-look-back-at-2024/</guid>
-            <description>Reflecting on 2024 and Looking Ahead to 2025
-As the year comes to a close, I like to reflect on the choices I’ve made and the things I’ve accomplished. This process helps me take stock of where I am and what I’ve achieved over the year, while also setting goals to aim for in the coming year.
-Career Shift One of the biggest changes this year was changing jobs. In the fall, I transitioned from working as a Sr.</description>
+            <description>&lt;p&gt;Reflecting on 2024 and Looking Ahead to 2025&lt;/p&gt;
+&lt;p&gt;As the year comes to a close, I like to reflect on the choices I’ve made and the things I’ve accomplished. This process helps me take stock of where I am and what I’ve achieved over the year, while also setting goals to aim for in the coming year.&lt;/p&gt;
+&lt;h1 id=&#34;career-shift&#34;&gt;Career Shift&lt;/h1&gt;
+&lt;p&gt;One of the biggest changes this year was changing jobs. In the fall, I transitioned from working as a Sr. Network Engineer at a national retail company to taking on the same role at a global hosting provider. This shift has been a major adjustment. After nearly nine years in an established enterprise organization where things moved at a slower pace, I’m now part of a smaller, leaner, and fast-paced hosting provider with a global presence and rapid growth.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>Reflecting on 2024 and Looking Ahead to 2025</p>
 <p>As the year comes to a close, I like to reflect on the choices I’ve made and the things I’ve accomplished. This process helps me take stock of where I am and what I’ve achieved over the year, while also setting goals to aim for in the coming year.</p>
 <h1 id="career-shift">Career Shift</h1>
@@ -45,9 +109,126 @@ Career Shift One of the biggest changes this year was changing jobs. In the fall
 <h1 id="final-thoughts">Final Thoughts</h1>
 <p>2024 has been a year of growth, challenges, and exciting new directions. From changing jobs and diving into new technologies to stepping up in brewery ownership, rediscovering fitness, and reflecting on personal loss, it’s been a transformative year.</p>
 <p>As I look ahead to 2025, I’m excited to build on the momentum I’ve created, take on new challenges, and continue learning and growing—both professionally and personally. Thank you to everyone who has supported me along the way. I look forward to sharing more insights and updates in the coming year.</p>
-=======
-        <lastBuildDate>Sun, 01 Sep 2024 17:49:51 -0400</lastBuildDate>
-        <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+]]></content>
+        </item>
+        
+        <item>
+            <title>Practical Guide to VLAN Design and Implementation</title>
+            <link>//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/</link>
+            <pubDate>Wed, 20 Nov 2024 19:50:07 -0500</pubDate>
+            
+            <guid>//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/</guid>
+            <description>&lt;h3 id=&#34;practical-guide-to-vlan-design-and-implementation&#34;&gt;Practical Guide to VLAN Design and Implementation&lt;/h3&gt;
+&lt;h4 id=&#34;introduction&#34;&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;why-vlan-design-matters&#34;&gt;Why VLAN Design Matters&lt;/h3&gt;
+&lt;p&gt;Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h3 id="practical-guide-to-vlan-design-and-implementation">Practical Guide to VLAN Design and Implementation</h3>
+<h4 id="introduction">Introduction</h4>
+<p>In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.</p>
+<hr>
+<h3 id="why-vlan-design-matters">Why VLAN Design Matters</h3>
+<p>Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.</p>
+<ul>
+<li><strong>Enhanced Security</strong>: Segmentation limits the exposure of sensitive data. By isolating different types of traffic, such as IoT devices, user endpoints, and critical infrastructure (e.g., servers, VoIP), you can prevent lateral movement during security incidents.</li>
+<li><strong>Improved Performance</strong>: Grouping devices that need to communicate frequently in the same VLAN can reduce broadcast traffic and optimize network resources.</li>
+<li><strong>Scalability and Flexibility</strong>: Properly segmented VLANs make it easier to scale the network as the business grows, enabling smooth integration of new devices and services without overwhelming the network.</li>
+</ul>
+<hr>
+<h3 id="best-practices-for-vlan-design">Best Practices for VLAN Design</h3>
+<ol>
+<li>
+<p><strong>Plan Based on Business Requirements</strong></p>
+<ul>
+<li><strong>Understanding Roles and Departments</strong>: Identify the key groups within your organization that need separate network segments. These could include departments like HR, finance, guest networks, and critical services like voice (VoIP) or security cameras.</li>
+<li><strong>Identify Critical Devices and Services</strong>: Think about how network services like servers, printers, and wireless access points fit into your VLAN structure.</li>
+</ul>
+</li>
+<li>
+<p><strong>Segment Based on Functionality</strong></p>
+<ul>
+<li><strong>User VLANs</strong>: Group users by department or role (e.g., HR, IT, Sales).</li>
+<li><strong>Voice VLANs</strong>: Dedicate a VLAN for VoIP traffic to ensure high-quality, low-latency communications.</li>
+<li><strong>Management VLANs</strong>: Use a dedicated VLAN for managing infrastructure devices like switches and firewalls.</li>
+<li><strong>Guest VLANs</strong>: Isolate external or guest devices onto their own VLAN to ensure they cannot access internal resources.</li>
+</ul>
+</li>
+<li>
+<p><strong>Keep VLAN Sprawl in Check</strong></p>
+<ul>
+<li>Avoid creating too many VLANs, as this can lead to complexity and increased management overhead. Each VLAN should serve a clear purpose.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="implementing-vlans-with-a-layered-approach">Implementing VLANs with a Layered Approach</h3>
+<p>When designing and implementing VLANs, it’s important to understand how VLANs function at both Layer 2 (data link layer) and Layer 3 (network layer) of the OSI model. This layered approach ensures logical segmentation while enabling necessary communication.</p>
+<h4 id="layer-2-vlans-basic-segmentation">Layer 2 VLANs: Basic Segmentation</h4>
+<ul>
+<li><strong>Access Ports</strong>: Assigned to end devices and carry traffic for a single VLAN.</li>
+<li><strong>Trunk Ports</strong>: Carry traffic for multiple VLANs between switches using 802.1Q tagging.</li>
+</ul>
+<h4 id="layer-3-vlans-enabling-communication">Layer 3 VLANs: Enabling Communication</h4>
+<ul>
+<li><strong>Switch Virtual Interfaces (SVIs)</strong>: Virtual gateways for inter-VLAN routing on a Layer 3 switch.</li>
+<li><strong>Router-on-a-Stick</strong>: A single router interface configured for multiple VLANs using subinterfaces.</li>
+</ul>
+<h4 id="inter-vlan-routing">Inter-VLAN Routing</h4>
+<ul>
+<li>Use a Layer 3 switch for efficient routing between VLANs, especially in larger networks.</li>
+<li>Configure ACLs to restrict unnecessary traffic between VLANs.</li>
+</ul>
+<h4 id="vlan-trunking">VLAN Trunking</h4>
+<ul>
+<li>Use <strong>802.1Q tagging</strong> to allow VLAN traffic across multiple switches.</li>
+<li>Restrict allowed VLANs on trunk ports to reduce unnecessary traffic.</li>
+</ul>
+<hr>
+<h3 id="practical-design-example-setting-up-vlans-for-a-new-office">Practical Design Example: Setting Up VLANs for a New Office</h3>
+<h4 id="scenario-overview">Scenario Overview</h4>
+<p>We’ll design a network for an office with finance, HR, sales, and IT departments, a small server presence, VoIP phones, and considerations for wireless and guest access. A <strong>/16 network</strong> in the <strong>10.x.x.x</strong> range will be used for the site, divided into <strong>/24 subnets</strong>.</p>
+<h4 id="step-1-network-management-and-server-vlans">Step 1: Network Management and Server VLANs</h4>
+<ul>
+<li><strong>VLAN 1 (Network Management)</strong>: Subnet <strong>10.0.1.0/24</strong>, restricted to IT for managing switches, firewalls, and controllers.</li>
+<li><strong>VLAN 2 (Servers)</strong>: Subnet <strong>10.0.2.0/24</strong>, hosting DNS, DHCP, and AD.</li>
+</ul>
+<h4 id="step-2-department-based-vlans">Step 2: Department-Based VLANs</h4>
+<ul>
+<li><strong>VLAN 10 (Finance)</strong>: Subnet <strong>10.0.10.0/24</strong>, isolating sensitive financial data.</li>
+<li><strong>VLAN 20 (HR)</strong>: Subnet <strong>10.0.20.0/24</strong>, securing employee records.</li>
+<li><strong>VLAN 30 (Sales)</strong>: Subnet <strong>10.0.30.0/24</strong>, managing sales traffic.</li>
+<li><strong>VLAN 40 (IT)</strong>: Subnet <strong>10.0.40.0/24</strong>, giving IT a dedicated space.</li>
+</ul>
+<h4 id="step-3-voip-vlan">Step 3: VoIP VLAN</h4>
+<ul>
+<li><strong>VLAN 50 (Voice)</strong>: Subnet <strong>10.0.50.0/24</strong>, prioritizing voice traffic.</li>
+</ul>
+<h4 id="step-4-corporate-wireless-and-guest-vlans">Step 4: Corporate Wireless and Guest VLANs</h4>
+<ul>
+<li><strong>VLAN 80 (Corporate Wireless)</strong>: Subnet <strong>10.0.80.0/24</strong>, for employee wireless devices.</li>
+<li><strong>VLAN 200 (Guest)</strong>: Subnet <strong>10.0.200.0/24</strong>, isolated for visitor access to the internet only.</li>
+</ul>
+<h4 id="step-5-inter-vlan-routing">Step 5: Inter-VLAN Routing</h4>
+<ul>
+<li><strong>SVIs</strong>: Each VLAN has a corresponding gateway (e.g., <strong>10.0.1.1</strong> for VLAN 1, <strong>10.0.10.1</strong> for VLAN 10).</li>
+<li><strong>ACLs</strong>: Control traffic between VLANs, e.g., allowing wireless to access servers but isolating guests.</li>
+</ul>
+<h4 id="step-6-vlan-trunking">Step 6: VLAN Trunking</h4>
+<ul>
+<li><strong>802.1Q</strong>: Used to carry VLAN traffic across switches, with allowed VLANs restricted on trunk ports.</li>
+</ul>
+<hr>
+<h3 id="conclusion-final-design-overview">Conclusion: Final Design Overview</h3>
+<p>This design ensures:</p>
+<ul>
+<li>Logical segmentation using a structured 10.x.x.x scheme.</li>
+<li>Lower VLAN numbers for foundational infrastructure.</li>
+<li>A higher VLAN number for the guest network to facilitate expansion.</li>
+<li>A flexible, secure, and scalable infrastructure ready for future growth.</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>What Is Network Address Translation and How Does It Work?</title>
@@ -55,14 +236,16 @@ Career Shift One of the biggest changes this year was changing jobs. In the fall
             <pubDate>Sun, 01 Sep 2024 17:49:51 -0400</pubDate>
             
             <guid>//localhost:1313/posts/what-is-network-address-translation-and-how-does-it-work/</guid>
-            <description>Understanding Network Address Translation (NAT) and Its Uses In today’s networking environments, Network Address Translation (NAT) plays a crucial role in connecting devices and maintaining network security. This article will explore what NAT is, the different types of NAT, and how it is used in various network scenarios. What is Network Address Translation (NAT)?
-Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet.</description>
+            <description>&lt;h3 id=&#34;understanding-network-address-translation-nat-and-its-uses&#34;&gt;Understanding Network Address Translation (NAT) and Its Uses&lt;/h3&gt;
+&lt;p&gt;In today’s networking environments, Network Address Translation (NAT) plays a crucial role in connecting devices and maintaining network security. This article will explore what NAT is, the different types of NAT, and how it is used in various network scenarios.
+What is Network Address Translation (NAT)?&lt;/p&gt;
+&lt;p&gt;Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet. NAT helps conserve the number of public IP addresses an organization needs, enhances security by masking internal IP addresses, and allows multiple devices to share a single public IP.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h3 id="understanding-network-address-translation-nat-and-its-uses">Understanding Network Address Translation (NAT) and Its Uses</h3>
 <p>In today’s networking environments, Network Address Translation (NAT) plays a crucial role in connecting devices and maintaining network security. This article will explore what NAT is, the different types of NAT, and how it is used in various network scenarios.
 What is Network Address Translation (NAT)?</p>
-<p>Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet. NAT helps conserve the number of public IP addresses an organization needs, enhances security by masking internal IP addresses, and allows multiple devices to share a single public IP.
-Why is NAT Important?</p>
-<h3 id="nat-is-essential-for-several-reasons">NAT is essential for several reasons:</h3>
+<p>Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet. NAT helps conserve the number of public IP addresses an organization needs, enhances security by masking internal IP addresses, and allows multiple devices to share a single public IP.</p>
+<h3 id="why-is-nat-important">Why is NAT Important?</h3>
+<p>NAT is essential for several reasons:</p>
 <ul>
 <li>
 <p><strong>IP Address Conservation:</strong> With the limited availability of IPv4 addresses, NAT helps extend the life of IPv4 by allowing multiple devices on a private network to share a single public IP address.</p>
@@ -111,7 +294,6 @@ Why is NAT Important?</p>
 </ul>
 <h3 id="final-thoughts">Final Thoughts</h3>
 <p>Network Address Translation is a fundamental networking technology that supports IP address conservation, enhances security, and simplifies network management. By understanding the different types of NAT and their use cases, network engineers can effectively design and implement network solutions that meet the needs of today’s dynamic environments.</p>
->>>>>>> 9235228942d62c164ff6f8722b1344e2c48fd23d
 ]]></content>
         </item>
         
@@ -121,8 +303,10 @@ Why is NAT Important?</p>
             <pubDate>Sat, 03 Aug 2024 21:26:09 -0400</pubDate>
             
             <guid>//localhost:1313/posts/understanding-dhcp---the-magic-behind-automatic-ip-assignment/</guid>
-            <description>In the world of network engineering, DHCP (Dynamic Host Configuration Protocol) is a crucial service that makes our lives a lot easier. But what exactly is DHCP, and how does it work? Let&amp;rsquo;s dive into the details and explore the ins and outs of this essential network service. What is DHCP?
-DHCP stands for Dynamic Host Configuration Protocol. It&amp;rsquo;s a network management protocol used to automate the process of configuring devices on IP networks, allowing them to use network services such as DNS, NTP, and any communication protocol based on UDP or TCP.</description>
+            <description>&lt;p&gt;In the world of network engineering, &lt;em&gt;DHCP&lt;/em&gt; &lt;em&gt;(Dynamic Host Configuration Protocol)&lt;/em&gt; is a crucial service that makes our lives a lot easier. But what exactly is DHCP, and how does it work? Let&amp;rsquo;s dive into the details and explore the ins and outs of this essential network service.
+What is DHCP?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DHCP&lt;/strong&gt; stands for Dynamic Host Configuration Protocol. It&amp;rsquo;s a network management protocol used to automate the process of configuring devices on IP networks, allowing them to use network services such as DNS, NTP, and any communication protocol based on UDP or TCP. Without DHCP, network administrators would need to manually assign IP addresses to every device on the network, which can be both time-consuming and prone to errors.
+How DHCP Works&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>In the world of network engineering, <em>DHCP</em> <em>(Dynamic Host Configuration Protocol)</em> is a crucial service that makes our lives a lot easier. But what exactly is DHCP, and how does it work? Let&rsquo;s dive into the details and explore the ins and outs of this essential network service.
 What is DHCP?</p>
 <p><strong>DHCP</strong> stands for Dynamic Host Configuration Protocol. It&rsquo;s a network management protocol used to automate the process of configuring devices on IP networks, allowing them to use network services such as DNS, NTP, and any communication protocol based on UDP or TCP. Without DHCP, network administrators would need to manually assign IP addresses to every device on the network, which can be both time-consuming and prone to errors.
@@ -200,7 +384,10 @@ How DHCP Works</p>
             <pubDate>Wed, 24 Jul 2024 19:51:16 -0400</pubDate>
             
             <guid>//localhost:1313/posts/dynamic-routing-protocols---bgp/</guid>
-            <description>Let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: BGP, or Border Gateway Protocol. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic. Think of BGP as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.</description>
+            <description>&lt;img src=&#34;//localhost:1313/img/BGP.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 28px;&#34;  /&gt;
+
+
+&lt;p&gt;Let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: &lt;strong&gt;BGP&lt;/strong&gt;, or &lt;em&gt;Border Gateway Protocol&lt;/em&gt;. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic. Think of BGP as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.&lt;/p&gt;</description>
             <content type="html"><![CDATA[
     <img src="/img/BGP.png"  alt="Image created by ChatGPT"  class="center"  style="border-radius: 28px;"  />
 
@@ -282,7 +469,7 @@ How DHCP Works</p>
             <pubDate>Tue, 16 Jul 2024 21:32:35 -0400</pubDate>
             
             <guid>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</guid>
-            <description>In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&amp;rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&amp;rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.</description>
+            <description>&lt;p&gt;In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&amp;rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&amp;rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.</p>
 <h3 id="lan-designs">LAN Designs</h3>
 <h5 id="three-tier-architecture"><strong>Three-Tier Architecture</strong></h5>
@@ -390,9 +577,14 @@ Cons:
             <pubDate>Thu, 11 Jul 2024 22:26:05 -0400</pubDate>
             
             <guid>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</guid>
-            <description>Ollama https://ollama.com/
-Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.
-Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.</description>
+            <description>&lt;img src=&#34;//localhost:1313/img/ollama.png&#34;  alt=&#34;Ollama logo&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+
+
+&lt;h1 id=&#34;ollama&#34;&gt;Ollama&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://ollama.com/&#34;&gt;https://ollama.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.&lt;/p&gt;
+&lt;h3 id=&#34;ollama-installation&#34;&gt;Ollama installation&lt;/h3&gt;
+&lt;p&gt;Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on &lt;a href=&#34;https://ollama.com/&#34;&gt;https://ollama.com/&lt;/a&gt;.&lt;/p&gt;</description>
             <content type="html"><![CDATA[
     <img src="/img/ollama.png"  alt="Ollama logo"  class="center"  style="border-radius: 8px;"  />
 
@@ -471,7 +663,7 @@ Ollama installation Starting out, we will be installing this into an Ubuntu virt
             <pubDate>Fri, 14 Jun 2024 21:56:14 -0400</pubDate>
             
             <guid>//localhost:1313/posts/understanding-trunk-ports/</guid>
-            <description>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
+            <description>&lt;p&gt;In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</p>
 <h3 id="what-is-a-trunk-port">What is a Trunk Port?</h3>
 <p>A trunk port is a type of switch port that is designed to carry traffic for multiple VLANs (Virtual Local Area Networks) across the network. Unlike access ports, which only carry traffic for a single VLAN, trunk ports can handle traffic from multiple VLANs simultaneously. This makes them essential for interconnecting switches and other network devices in a VLAN-segmented network.
@@ -540,8 +732,14 @@ The Importance of Using an Unused VLAN for the Native VLAN</p>
             <pubDate>Fri, 10 May 2024 11:50:59 -0400</pubDate>
             
             <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
-            <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.
-Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
+            <description>&lt;img src=&#34;//localhost:1313/img/VLAN.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+
+
+&lt;p&gt;VLAN stands for &lt;strong&gt;Virtual Local Area Network&lt;/strong&gt;. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&lt;/p&gt;
+&lt;h3 id=&#34;why-use-vlans&#34;&gt;Why Use VLANs?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Organization&lt;/strong&gt;: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other. With VLANs, you can separate departments (like HR, Sales, and IT) so each has its own space to communicate without interference.&lt;/p&gt;</description>
             <content type="html"><![CDATA[
     <img src="/img/VLAN.png"  alt="Image created by ChatGPT"  class="center"  style="border-radius: 8px;"  />
 
@@ -574,7 +772,10 @@ Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s
             <pubDate>Sat, 02 Mar 2024 13:12:33 -0400</pubDate>
             
             <guid>//localhost:1313/posts/networking-for-ai/</guid>
-            <description>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.</description>
+            <description>&lt;img src=&#34;//localhost:1313/img/RDMA.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+
+
+&lt;p&gt;AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications. However, recently, I’ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.&lt;/p&gt;</description>
             <content type="html"><![CDATA[
     <img src="/img/RDMA.png"  alt="Image created by ChatGPT"  class="center"  style="border-radius: 8px;"  />
 

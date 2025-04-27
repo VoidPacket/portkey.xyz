@@ -4,84 +4,94 @@
     <title>Portkey</title>
     <link>//localhost:1313/</link>
     <description>Recent content on Portkey</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-<<<<<<< HEAD
-    <lastBuildDate>Tue, 31 Dec 2024 14:51:47 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 13:46:01 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pets vs Cattle</title>
+      <link>//localhost:1313/posts/pets-vs-cattle/</link>
+      <pubDate>Sun, 27 Apr 2025 13:46:01 -0400</pubDate>
+      <guid>//localhost:1313/posts/pets-vs-cattle/</guid>
+      <description>&lt;p&gt;When you first get into IT, it’s natural to treat every server and network device like a pet. You name them, you care for them, you spend time fixing them when they get sick. You might even have some favorites you secretly root for. It’s kind of like having a dog. You don’t just replace a dog when it gets sick. You do whatever you can to heal it.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, this was just how things were done. Servers were built by hand. Network devices were configured line-by-line on the CLI. If something broke, you had to fix it. Rebuilding wasn&amp;rsquo;t easy, and automation was either too expensive or just out of reach for most teams.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Look Back at 2024</title>
       <link>//localhost:1313/posts/a-look-back-at-2024/</link>
       <pubDate>Tue, 31 Dec 2024 14:51:47 -0500</pubDate>
       <guid>//localhost:1313/posts/a-look-back-at-2024/</guid>
-      <description>Reflecting on 2024 and Looking Ahead to 2025&#xA;As the year comes to a close, I like to reflect on the choices I’ve made and the things I’ve accomplished. This process helps me take stock of where I am and what I’ve achieved over the year, while also setting goals to aim for in the coming year.&#xA;Career Shift One of the biggest changes this year was changing jobs. In the fall, I transitioned from working as a Sr.</description>
-=======
-    <lastBuildDate>Sun, 01 Sep 2024 17:49:51 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+      <description>&lt;p&gt;Reflecting on 2024 and Looking Ahead to 2025&lt;/p&gt;&#xA;&lt;p&gt;As the year comes to a close, I like to reflect on the choices I’ve made and the things I’ve accomplished. This process helps me take stock of where I am and what I’ve achieved over the year, while also setting goals to aim for in the coming year.&lt;/p&gt;&#xA;&lt;h1 id=&#34;career-shift&#34;&gt;Career Shift&lt;/h1&gt;&#xA;&lt;p&gt;One of the biggest changes this year was changing jobs. In the fall, I transitioned from working as a Sr. Network Engineer at a national retail company to taking on the same role at a global hosting provider. This shift has been a major adjustment. After nearly nine years in an established enterprise organization where things moved at a slower pace, I’m now part of a smaller, leaner, and fast-paced hosting provider with a global presence and rapid growth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Practical Guide to VLAN Design and Implementation</title>
+      <link>//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/</link>
+      <pubDate>Wed, 20 Nov 2024 19:50:07 -0500</pubDate>
+      <guid>//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/</guid>
+      <description>&lt;h3 id=&#34;practical-guide-to-vlan-design-and-implementation&#34;&gt;Practical Guide to VLAN Design and Implementation&lt;/h3&gt;&#xA;&lt;h4 id=&#34;introduction&#34;&gt;Introduction&lt;/h4&gt;&#xA;&lt;p&gt;In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;why-vlan-design-matters&#34;&gt;Why VLAN Design Matters&lt;/h3&gt;&#xA;&lt;p&gt;Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>What Is Network Address Translation and How Does It Work?</title>
       <link>//localhost:1313/posts/what-is-network-address-translation-and-how-does-it-work/</link>
       <pubDate>Sun, 01 Sep 2024 17:49:51 -0400</pubDate>
       <guid>//localhost:1313/posts/what-is-network-address-translation-and-how-does-it-work/</guid>
-      <description>Understanding Network Address Translation (NAT) and Its Uses In today’s networking environments, Network Address Translation (NAT) plays a crucial role in connecting devices and maintaining network security. This article will explore what NAT is, the different types of NAT, and how it is used in various network scenarios. What is Network Address Translation (NAT)?&#xA;Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet.</description>
->>>>>>> 9235228942d62c164ff6f8722b1344e2c48fd23d
+      <description>&lt;h3 id=&#34;understanding-network-address-translation-nat-and-its-uses&#34;&gt;Understanding Network Address Translation (NAT) and Its Uses&lt;/h3&gt;&#xA;&lt;p&gt;In today’s networking environments, Network Address Translation (NAT) plays a crucial role in connecting devices and maintaining network security. This article will explore what NAT is, the different types of NAT, and how it is used in various network scenarios.&#xA;What is Network Address Translation (NAT)?&lt;/p&gt;&#xA;&lt;p&gt;Network Address Translation (NAT) is a method used by routers to translate private (non-routable) IP addresses within a local network to a single public IP address before sending traffic to the internet. NAT helps conserve the number of public IP addresses an organization needs, enhances security by masking internal IP addresses, and allows multiple devices to share a single public IP.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding DHCP: The Magic Behind Automatic IP Assignment</title>
       <link>//localhost:1313/posts/understanding-dhcp---the-magic-behind-automatic-ip-assignment/</link>
       <pubDate>Sat, 03 Aug 2024 21:26:09 -0400</pubDate>
       <guid>//localhost:1313/posts/understanding-dhcp---the-magic-behind-automatic-ip-assignment/</guid>
-      <description>In the world of network engineering, DHCP (Dynamic Host Configuration Protocol) is a crucial service that makes our lives a lot easier. But what exactly is DHCP, and how does it work? Let&amp;rsquo;s dive into the details and explore the ins and outs of this essential network service. What is DHCP?&#xA;DHCP stands for Dynamic Host Configuration Protocol. It&amp;rsquo;s a network management protocol used to automate the process of configuring devices on IP networks, allowing them to use network services such as DNS, NTP, and any communication protocol based on UDP or TCP.</description>
+      <description>&lt;p&gt;In the world of network engineering, &lt;em&gt;DHCP&lt;/em&gt; &lt;em&gt;(Dynamic Host Configuration Protocol)&lt;/em&gt; is a crucial service that makes our lives a lot easier. But what exactly is DHCP, and how does it work? Let&amp;rsquo;s dive into the details and explore the ins and outs of this essential network service.&#xA;What is DHCP?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;DHCP&lt;/strong&gt; stands for Dynamic Host Configuration Protocol. It&amp;rsquo;s a network management protocol used to automate the process of configuring devices on IP networks, allowing them to use network services such as DNS, NTP, and any communication protocol based on UDP or TCP. Without DHCP, network administrators would need to manually assign IP addresses to every device on the network, which can be both time-consuming and prone to errors.&#xA;How DHCP Works&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dynamic Routing Protocols: BGP</title>
       <link>//localhost:1313/posts/dynamic-routing-protocols---bgp/</link>
       <pubDate>Wed, 24 Jul 2024 19:51:16 -0400</pubDate>
       <guid>//localhost:1313/posts/dynamic-routing-protocols---bgp/</guid>
-      <description>Let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: BGP, or Border Gateway Protocol. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic. Think of BGP as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.</description>
+      <description>&lt;img src=&#34;//localhost:1313/img/BGP.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 28px;&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;Let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: &lt;strong&gt;BGP&lt;/strong&gt;, or &lt;em&gt;Border Gateway Protocol&lt;/em&gt;. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic. Think of BGP as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exploring Different Network Designs: LAN and WAN</title>
       <link>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</link>
       <pubDate>Tue, 16 Jul 2024 21:32:35 -0400</pubDate>
       <guid>//localhost:1313/posts/exploring-different-network-designs---lan-and-wan/</guid>
-      <description>In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&amp;rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&amp;rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.</description>
+      <description>&lt;p&gt;In network engineering, the design of a network is pivotal to its efficiency, scalability, and reliability. Different types of network designs cater to various needs, from local area networks (LAN) to wide area networks (WAN). In this post, we&amp;rsquo;ll delve into several LAN designs, such as three-tier, collapsed core, campus, and spine-and-leaf architectures, as well as WAN designs like hub-and-spoke and mesh. We&amp;rsquo;ll explore the pros and cons of each to help you make informed decisions for your network infrastructure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running Ollama AI in Your Homelab</title>
       <link>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</link>
       <pubDate>Thu, 11 Jul 2024 22:26:05 -0400</pubDate>
       <guid>//localhost:1313/posts/running-ollama-ai-in-your-homelab/</guid>
-      <description>Ollama https://ollama.com/&#xA;Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.&#xA;Ollama installation Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on https://ollama.</description>
+      <description>&lt;img src=&#34;//localhost:1313/img/ollama.png&#34;  alt=&#34;Ollama logo&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;h1 id=&#34;ollama&#34;&gt;Ollama&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ollama.com/&#34;&gt;https://ollama.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ollama is a platform designed to run AI models locally. It offers a streamlined experience for deploying and managing AI applications without requiring extensive cloud resources. Ollama supports a variety of models and provides tools for easy integrations and monitoring.&lt;/p&gt;&#xA;&lt;h3 id=&#34;ollama-installation&#34;&gt;Ollama installation&lt;/h3&gt;&#xA;&lt;p&gt;Starting out, we will be installing this into an Ubuntu virtual server. I am running Ubuntu server 22.04 on my local Proxmox server. once you have your base Ubuntu server ready to go, installing Ollama is super simple, we will just follow the Download instructions found on &lt;a href=&#34;https://ollama.com/&#34;&gt;https://ollama.com/&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
       <link>//localhost:1313/about/</link>
       <pubDate>Tue, 02 Jul 2024 13:12:33 -0400</pubDate>
       <guid>//localhost:1313/about/</guid>
-      <description>Hello! I’m Bryan Wassel, a passionate network engineer with over 15 years of experience in the IT industry, including more than 6 years specializing in Network Engineering. I have a knack for making complex systems simple and reliable, and I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.&#xA;At Portkey, my goal is to create a space where people can learn and explore different topics in network engineering.</description>
+      <description>&lt;img src=&#34;//localhost:1313/img/_portrait.png&#34;  alt=&#34;Bryan Wassel 2024&#34;  class=&#34;center&#34;  style=&#34;border-radius: 80px;&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;Hello! I’m Bryan Wassel, a passionate network engineer with over 15 years of experience in the IT industry, including more than 6 years specializing in Network Engineering. I have a knack for making complex systems simple and reliable, and I’ve had the pleasure of working on a variety of exciting projects that have sharpened my skills and expanded my knowledge.&lt;/p&gt;&#xA;&lt;p&gt;At Portkey, my goal is to create a space where people can learn and explore different topics in network engineering. I believe that learning is a continuous journey, and through this blog, I aim to share insights, tips, and trends in the world of networking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Trunk Ports</title>
       <link>//localhost:1313/posts/understanding-trunk-ports/</link>
       <pubDate>Fri, 14 Jun 2024 21:56:14 -0400</pubDate>
       <guid>//localhost:1313/posts/understanding-trunk-ports/</guid>
-      <description>In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.</description>
+      <description>&lt;p&gt;In the realm of network engineering, understanding the distinction between different types of ports is fundamental. Among these, trunk ports play a crucial role in managing network traffic efficiently and securely. In this post, we&amp;rsquo;ll delve into what a trunk port is, how it differs from an access port, and its importance in network infrastructure. We&amp;rsquo;ll also cover best practices for configuring trunk ports to ensure optimal security and performance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Is a VLAN</title>
       <link>//localhost:1313/posts/what-is-a-vlan/</link>
       <pubDate>Fri, 10 May 2024 11:50:59 -0400</pubDate>
       <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
-      <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&#xA;Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
+      <description>&lt;img src=&#34;//localhost:1313/img/VLAN.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;VLAN stands for &lt;strong&gt;Virtual Local Area Network&lt;/strong&gt;. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-use-vlans&#34;&gt;Why Use VLANs?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Organization&lt;/strong&gt;: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other. With VLANs, you can separate departments (like HR, Sales, and IT) so each has its own space to communicate without interference.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Networking for AI</title>
       <link>//localhost:1313/posts/networking-for-ai/</link>
       <pubDate>Sat, 02 Mar 2024 13:12:33 -0400</pubDate>
       <guid>//localhost:1313/posts/networking-for-ai/</guid>
-      <description>AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications.</description>
+      <description>&lt;img src=&#34;//localhost:1313/img/RDMA.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;AI has become a significant force in the market, reshaping how people perceive technology. While I enjoy using AI models to craft images and descriptions for my D&amp;amp;D group, immortalizing our adventures, my interaction with AI has been limited to this recreational use. Professionally, as a network engineer, my involvement with AI models is mostly limited to drawing inspiration from them for new ideas, or getting help rewording my emails and other communications. However, recently, I’ve delved into understanding how network design differs for AI farms and the rationale behind using different technologies or hardware setups.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

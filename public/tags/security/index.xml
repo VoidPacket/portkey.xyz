@@ -4,17 +4,24 @@
     <title>Security on Portkey</title>
     <link>//localhost:1313/tags/security/</link>
     <description>Recent content in Security on Portkey</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 10 May 2024 11:50:59 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2024 19:50:07 -0500</lastBuildDate>
     <atom:link href="//localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practical Guide to VLAN Design and Implementation</title>
+      <link>//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/</link>
+      <pubDate>Wed, 20 Nov 2024 19:50:07 -0500</pubDate>
+      <guid>//localhost:1313/posts/practical-guide-to-vlan-design-and-implementation/</guid>
+      <description>&lt;h3 id=&#34;practical-guide-to-vlan-design-and-implementation&#34;&gt;Practical Guide to VLAN Design and Implementation&lt;/h3&gt;&#xA;&lt;h4 id=&#34;introduction&#34;&gt;Introduction&lt;/h4&gt;&#xA;&lt;p&gt;In a previous post, we covered the basics of VLANs—what they are and why they are useful for organizing, securing, and optimizing your network. In this guide, we’ll extend those concepts, focusing on how to design VLANs effectively and why proper segmentation is key for security, performance, and scalability in both small and large network environments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;why-vlan-design-matters&#34;&gt;Why VLAN Design Matters&lt;/h3&gt;&#xA;&lt;p&gt;Effective VLAN design goes beyond simple segmentation. It involves strategically planning how devices, services, and departments are grouped to enhance security, manageability, and performance. A well-thought-out design can reduce the risk of network congestion, improve fault isolation, and minimize the impact of potential security breaches.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>What Is a VLAN</title>
       <link>//localhost:1313/posts/what-is-a-vlan/</link>
       <pubDate>Fri, 10 May 2024 11:50:59 -0400</pubDate>
       <guid>//localhost:1313/posts/what-is-a-vlan/</guid>
-      <description>VLAN stands for Virtual Local Area Network. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&#xA;Why Use VLANs? Organization: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other.</description>
+      <description>&lt;img src=&#34;//localhost:1313/img/VLAN.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;VLAN stands for &lt;strong&gt;Virtual Local Area Network&lt;/strong&gt;. Think of it as a way to segment a physical network into smaller, isolated parts without needing separate physical switches for each segment. It&amp;rsquo;s like having a bunch of invisible walls inside your network that can help organize and secure your traffic.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-use-vlans&#34;&gt;Why Use VLANs?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Organization&lt;/strong&gt;: Imagine your office building. Without VLANs, it’s like having no cubicles or offices—just one giant room where everyone’s talking over each other. With VLANs, you can separate departments (like HR, Sales, and IT) so each has its own space to communicate without interference.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

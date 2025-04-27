@@ -4,7 +4,7 @@
     <title>Routing on Portkey</title>
     <link>//localhost:1313/tags/routing/</link>
     <description>Recent content in Routing on Portkey</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 24 Jul 2024 19:51:16 -0400</lastBuildDate>
@@ -14,7 +14,7 @@
       <link>//localhost:1313/posts/dynamic-routing-protocols---bgp/</link>
       <pubDate>Wed, 24 Jul 2024 19:51:16 -0400</pubDate>
       <guid>//localhost:1313/posts/dynamic-routing-protocols---bgp/</guid>
-      <description>Let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: BGP, or Border Gateway Protocol. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic. Think of BGP as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.</description>
+      <description>&lt;img src=&#34;//localhost:1313/img/BGP.png&#34;  alt=&#34;Image created by ChatGPT&#34;  class=&#34;center&#34;  style=&#34;border-radius: 28px;&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;Let&amp;rsquo;s dive into something that&amp;rsquo;s at the core of how the internet works: &lt;strong&gt;BGP&lt;/strong&gt;, or &lt;em&gt;Border Gateway Protocol&lt;/em&gt;. If you’ve ever wondered how data finds its way across the globe, BGP is a big part of that magic. Think of BGP as the postal service of the internet. Just like how postal services route your mail through various cities to get it to its destination, BGP routes data between different networks.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Portkey</title>
+    <link>//localhost:1313/tags/automation/</link>
+    <description>Recent content in Automation on Portkey</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 27 Apr 2025 13:46:01 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pets vs Cattle</title>
+      <link>//localhost:1313/posts/pets-vs-cattle/</link>
+      <pubDate>Sun, 27 Apr 2025 13:46:01 -0400</pubDate>
+      <guid>//localhost:1313/posts/pets-vs-cattle/</guid>
+      <description>&lt;p&gt;When you first get into IT, it’s natural to treat every server and network device like a pet. You name them, you care for them, you spend time fixing them when they get sick. You might even have some favorites you secretly root for. It’s kind of like having a dog. You don’t just replace a dog when it gets sick. You do whatever you can to heal it.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, this was just how things were done. Servers were built by hand. Network devices were configured line-by-line on the CLI. If something broke, you had to fix it. Rebuilding wasn&amp;rsquo;t easy, and automation was either too expensive or just out of reach for most teams.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
