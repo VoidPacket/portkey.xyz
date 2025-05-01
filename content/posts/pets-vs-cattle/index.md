@@ -89,3 +89,4 @@ By treating your infrastructure as something that can be rebuilt at any time, yo
 Freedom to scale, freedom to recover quickly, and freedom to focus your energy on building rather than constantly firefighting.
 
 It might feel strange at first, but once you embrace this new way of thinking, it becomes hard to imagine doing it any other way.
+
